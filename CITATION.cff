@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "OpenCompressor-Twin: calibration, baseline benchmarking and test design for positive-displacement refrigerant compressors"
+type: software
+authors:
+  - name: "Jianke Huanneng Technology Co., Ltd."
+version: "0.1.0a1"
+license: MIT
+repository-code: "https://github.com/wangzhichao-jpg/opencompressor-twin"
+keywords:
+  - compressor
+  - refrigeration
+  - rolling piston
+  - scroll
+  - calibration
+  - design of experiments

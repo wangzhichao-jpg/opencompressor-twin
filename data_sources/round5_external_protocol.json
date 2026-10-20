@@ -1,0 +1,52 @@
+{
+  "protocol_id": "round5-external-frozen-v1",
+  "frozen_before": "download of candidate report and any target value inspection",
+  "candidate_source": {
+    "title": "Compressor Calorimeter Test of R-410A Alternatives R-32, DR-5, and L-41A Using a Scroll Compressor",
+    "program": "AHRI Low-GWP AREP Test Report #11",
+    "url": "https://info.ornl.gov/sites/publications/files/Pub44928.pdf",
+    "use": "Appendix experimental tables only; no fitted-coefficient tables or derived points"
+  },
+  "datasets": {
+    "include": [{"refrigerant": "R410A", "suction_condition": "fixed actual suction temperature 65F"},
+                {"refrigerant": "R32", "suction_condition": "fixed actual suction temperature 65F"}],
+    "exclude": ["DR-5", "L-41A", "fixed 20F superheat tables", "fixed 40F superheat tables"],
+    "pooling": "none; each refrigerant/suction-condition table is a separate dataset"
+  },
+  "admission": {
+    "displacement": "report specification",
+    "speed": "measured per-point speed, else nominal_mechanical_rpm = 60*rated_volume_rate/displacement from report; never infer rpm from supply frequency",
+    "pressure": "report absolute pressure preferred; else CoolProp dew pressure from reported dew temperature, flagged",
+    "targets": "measured mass flow and electrical power from the same table cell; blank cells excluded",
+    "phase": "CoolProp single-phase gas suction for all points"
+  },
+  "split": {
+    "group": "one table cell",
+    "mandatory_train": "scipy.spatial.ConvexHull vertices of (Ps,Pd) normalized to [0,1]",
+    "shuffle": "sorted remaining group ids, numpy.random.default_rng(20261021).shuffle",
+    "n_test_and_n_calibration": "max(9, round(0.1875*N))",
+    "order": "first n test, next n calibration, rest train",
+    "minimum_groups_for_test": "hull_vertices + 2*9 + 4"
+  },
+  "methods": {
+    "code_numerical_behavior": "octwin 0.1.0.dev3",
+    "semiempirical": "scroll four-parameter model",
+    "semiempirical_rbf": {"length_scale": 0.5, "ridge": 0.01},
+    "baselines": ["training affine", "AHRI10 full bivariate cubic"],
+    "intervals": "group-max split conformal 90% for semiempirical and semiempirical_rbf on the same calibration groups"
+  },
+  "criteria": {
+    "A_p0_numeric": "per response MARE<=5% and P95<=10%",
+    "B_correction": "RBF MARE lower than base on both responses",
+    "C_vs_strongest_baseline": "max(response MARE) of RBF <= AHRI10 (affine if AHRI10 unavailable)",
+    "D_intervals": "report coverage and width only; no pass/fail"
+  },
+  "secondary_design": {
+    "strategies": ["random", "maximin", "d_optimal", "kernel_ivr"],
+    "budgets": "hull count, 12, 16, 24, all training groups; only values <= training pool",
+    "seeds": [0, 1, 2, 3, 4],
+    "families": ["semiempirical", "affine", "ahri10", "semiempirical_rbf"],
+    "criterion": "kernel_ivr max-response MARE below maximin in a majority of (budget x dataset) cells"
+  },
+  "discipline": "single scoring run; any later correction is a new labelled non-blind version"
+}

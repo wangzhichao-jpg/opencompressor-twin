@@ -1,0 +1,22 @@
+{
+  "train": [
+    "near-repeat-line39",
+    "near-repeat-line23",
+    "near-repeat-line64",
+    "near-repeat-line68",
+    "near-repeat-line62",
+    "near-repeat-line59",
+    "near-repeat-line70",
+    "near-repeat-line69",
+    "near-repeat-line72",
+    "near-repeat-line71"
+  ],
+  "calibration": [],
+  "test": [
+    "near-repeat-line33",
+    "near-repeat-line73"
+  ],
+  "seed": 42,
+  "method": "input-only near-repeat groups; SHA256 order; two final groups; no residual calibration set",
+  "status": "exploratory frozen split; not a prospective blind test"
+}

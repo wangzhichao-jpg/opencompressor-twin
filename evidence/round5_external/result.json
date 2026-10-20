@@ -1,0 +1,2315 @@
+{
+  "protocol_id": "round5-external-frozen-v1",
+  "trace_canonical_sha256": "4c65fabaedc28d3752196d6543a043b82829cf2d25189d1fe3322dd369c5e177",
+  "datasets": {
+    "arep11_r410a_65f": {
+      "counts": {
+        "train": 42,
+        "calibration": 12,
+        "test": 12
+      },
+      "methods": {
+        "semiempirical": {
+          "total": 12,
+          "predicted": 12,
+          "refused_or_failed": 0,
+          "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+          "mass_flow_kg_s": {
+            "mare_percent": 1.394533576299439,
+            "p95_are_percent": 2.4719547900156815,
+            "max_are_percent": 2.6293675408568973,
+            "interval_coverage": 1.0,
+            "interval_mean_relative_width": 0.07005038444661806,
+            "interval_points": 12
+          },
+          "power_w": {
+            "mare_percent": 2.798356885229022,
+            "p95_are_percent": 6.170760656865757,
+            "max_are_percent": 6.987113458684946,
+            "interval_coverage": 1.0,
+            "interval_mean_relative_width": 0.15786030981942978,
+            "interval_points": 12
+          }
+        },
+        "semiempirical_rbf": {
+          "total": 12,
+          "predicted": 12,
+          "refused_or_failed": 0,
+          "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+          "mass_flow_kg_s": {
+            "mare_percent": 0.3595311657438954,
+            "p95_are_percent": 0.663426232661527,
+            "max_are_percent": 0.6727100753533666,
+            "interval_coverage": 0.75,
+            "interval_mean_relative_width": 0.010127337282712649,
+            "interval_points": 12
+          },
+          "power_w": {
+            "mare_percent": 0.26283325642909766,
+            "p95_are_percent": 0.532854949224113,
+            "max_are_percent": 0.5351115861829348,
+            "interval_coverage": 1.0,
+            "interval_mean_relative_width": 0.014784227425685935,
+            "interval_points": 12
+          }
+        },
+        "affine": {
+          "total": 12,
+          "predicted": 12,
+          "refused_or_failed": 0,
+          "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+          "mass_flow_kg_s": {
+            "mare_percent": 1.3134993176229581,
+            "p95_are_percent": 2.515767235961375,
+            "max_are_percent": 2.557322141405749
+          },
+          "power_w": {
+            "mare_percent": 0.6244936816305067,
+            "p95_are_percent": 1.342034924006421,
+            "max_are_percent": 1.3643012446802771
+          }
+        },
+        "ahri10": {
+          "total": 12,
+          "predicted": 12,
+          "refused_or_failed": 0,
+          "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+          "mass_flow_kg_s": {
+            "mare_percent": 0.2944754650653432,
+            "p95_are_percent": 0.6104588739855287,
+            "max_are_percent": 0.7064422411764304
+          },
+          "power_w": {
+            "mare_percent": 0.13572078075633764,
+            "p95_are_percent": 0.2918928787280894,
+            "max_are_percent": 0.3162306776077761
+          }
+        }
+      },
+      "baseline_status": {
+        "affine": "available",
+        "ahri10": "available"
+      },
+      "intervals": {
+        "semiempirical": {
+          "status": "available",
+          "method": "group-max split conformal, relative-to-prediction residual",
+          "groups": 12,
+          "nominal_coverage": 0.9,
+          "relative_radius": {
+            "mass_flow_kg_s": 0.03502519222330902,
+            "power_w": 0.07893015490971489
+          },
+          "calibration_group_ids": [
+            "A3-Td100-Te25",
+            "A3-Td100-Te45",
+            "A3-Td100-Te55",
+            "A3-Td110-Te15",
+            "A3-Td110-Te25",
+            "A3-Td130-Te30",
+            "A3-Td140-Te50",
+            "A3-Td70-Te25",
+            "A3-Td80-Te40",
+            "A3-Td90-Te15",
+            "A3-Td90-Te30",
+            "A3-Td90-Te50"
+          ],
+          "limitation": "Coverage assumes exchangeable independent groups; not guaranteed on regional/shifted data; not measurement uncertainty"
+        },
+        "semiempirical_rbf": {
+          "status": "available",
+          "method": "group-max split conformal, relative-to-prediction residual",
+          "groups": 12,
+          "nominal_coverage": 0.9,
+          "relative_radius": {
+            "mass_flow_kg_s": 0.0050636686413563226,
+            "power_w": 0.007392113712842985
+          },
+          "calibration_group_ids": [
+            "A3-Td100-Te25",
+            "A3-Td100-Te45",
+            "A3-Td100-Te55",
+            "A3-Td110-Te15",
+            "A3-Td110-Te25",
+            "A3-Td130-Te30",
+            "A3-Td140-Te50",
+            "A3-Td70-Te25",
+            "A3-Td80-Te40",
+            "A3-Td90-Te15",
+            "A3-Td90-Te30",
+            "A3-Td90-Te50"
+          ],
+          "limitation": "Coverage assumes exchangeable independent groups; not guaranteed on regional/shifted data; not measurement uncertainty"
+        }
+      },
+      "criteria": {
+        "A_p0_numeric": {
+          "semiempirical": {
+            "mass_flow_kg_s": true,
+            "power_w": true
+          },
+          "semiempirical_rbf": {
+            "mass_flow_kg_s": true,
+            "power_w": true
+          }
+        },
+        "B_correction": "better_on_both",
+        "C_vs_strongest_baseline": {
+          "reference": "ahri10",
+          "rbf_max_mare": 0.3595311657438954,
+          "reference_max_mare": 0.2944754650653432,
+          "verdict": "worse"
+        }
+      }
+    },
+    "arep11_r32_65f": {
+      "counts": {
+        "train": 35,
+        "calibration": 10,
+        "test": 10
+      },
+      "methods": {
+        "semiempirical": {
+          "total": 10,
+          "predicted": 10,
+          "refused_or_failed": 0,
+          "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+          "mass_flow_kg_s": {
+            "mare_percent": 1.2421117035209306,
+            "p95_are_percent": 2.3460114322175123,
+            "max_are_percent": 2.919725444099175,
+            "interval_coverage": 0.9,
+            "interval_mean_relative_width": 0.05554580488298799,
+            "interval_points": 10
+          },
+          "power_w": {
+            "mare_percent": 2.2233046937856393,
+            "p95_are_percent": 4.5008423495319345,
+            "max_are_percent": 5.0096948331887825,
+            "interval_coverage": 1.0,
+            "interval_mean_relative_width": 0.11014212651318478,
+            "interval_points": 10
+          }
+        },
+        "semiempirical_rbf": {
+          "total": 10,
+          "predicted": 10,
+          "refused_or_failed": 0,
+          "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+          "mass_flow_kg_s": {
+            "mare_percent": 0.2439494245366991,
+            "p95_are_percent": 0.48212617912230954,
+            "max_are_percent": 0.5484778089217102,
+            "interval_coverage": 0.9,
+            "interval_mean_relative_width": 0.00982155093888016,
+            "interval_points": 10
+          },
+          "power_w": {
+            "mare_percent": 0.4650392559606075,
+            "p95_are_percent": 1.0272953547223973,
+            "max_are_percent": 1.0371555166521995,
+            "interval_coverage": 1.0,
+            "interval_mean_relative_width": 0.02125715869896403,
+            "interval_points": 10
+          }
+        },
+        "affine": {
+          "total": 10,
+          "predicted": 10,
+          "refused_or_failed": 0,
+          "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+          "mass_flow_kg_s": {
+            "mare_percent": 0.5280354177797564,
+            "p95_are_percent": 1.4895173209529975,
+            "max_are_percent": 1.5524126716975895
+          },
+          "power_w": {
+            "mare_percent": 1.1284916980368664,
+            "p95_are_percent": 1.7708736565299943,
+            "max_are_percent": 1.8034778733711843
+          }
+        },
+        "ahri10": {
+          "total": 10,
+          "predicted": 10,
+          "refused_or_failed": 0,
+          "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+          "mass_flow_kg_s": {
+            "mare_percent": 0.2253182681307686,
+            "p95_are_percent": 0.4857014026892069,
+            "max_are_percent": 0.5304793038729438
+          },
+          "power_w": {
+            "mare_percent": 0.48235258931601077,
+            "p95_are_percent": 1.050065955330973,
+            "max_are_percent": 1.1057224306183944
+          }
+        }
+      },
+      "baseline_status": {
+        "affine": "available",
+        "ahri10": "available"
+      },
+      "intervals": {
+        "semiempirical": {
+          "status": "available",
+          "method": "group-max split conformal, relative-to-prediction residual",
+          "groups": 10,
+          "nominal_coverage": 0.9,
+          "relative_radius": {
+            "mass_flow_kg_s": 0.027772902441493996,
+            "power_w": 0.05507106325659239
+          },
+          "calibration_group_ids": [
+            "A6-Td100-Te15",
+            "A6-Td100-Te50",
+            "A6-Td110-Te40",
+            "A6-Td110-Te50",
+            "A6-Td130-Te50",
+            "A6-Td70-Te20",
+            "A6-Td70-Te25",
+            "A6-Td80-Te30",
+            "A6-Td90-Te20",
+            "A6-Td90-Te50"
+          ],
+          "limitation": "Coverage assumes exchangeable independent groups; not guaranteed on regional/shifted data; not measurement uncertainty"
+        },
+        "semiempirical_rbf": {
+          "status": "available",
+          "method": "group-max split conformal, relative-to-prediction residual",
+          "groups": 10,
+          "nominal_coverage": 0.9,
+          "relative_radius": {
+            "mass_flow_kg_s": 0.004910775469440076,
+            "power_w": 0.010628579349482026
+          },
+          "calibration_group_ids": [
+            "A6-Td100-Te15",
+            "A6-Td100-Te50",
+            "A6-Td110-Te40",
+            "A6-Td110-Te50",
+            "A6-Td130-Te50",
+            "A6-Td70-Te20",
+            "A6-Td70-Te25",
+            "A6-Td80-Te30",
+            "A6-Td90-Te20",
+            "A6-Td90-Te50"
+          ],
+          "limitation": "Coverage assumes exchangeable independent groups; not guaranteed on regional/shifted data; not measurement uncertainty"
+        }
+      },
+      "criteria": {
+        "A_p0_numeric": {
+          "semiempirical": {
+            "mass_flow_kg_s": true,
+            "power_w": true
+          },
+          "semiempirical_rbf": {
+            "mass_flow_kg_s": true,
+            "power_w": true
+          }
+        },
+        "B_correction": "better_on_both",
+        "C_vs_strongest_baseline": {
+          "reference": "ahri10",
+          "rbf_max_mare": 0.4650392559606075,
+          "reference_max_mare": 0.48235258931601077,
+          "verdict": "not_worse"
+        }
+      }
+    }
+  },
+  "secondary": {
+    "arep11_r410a_65f": {
+      "budgets": [
+        9,
+        12,
+        16,
+        24,
+        42
+      ],
+      "records": 400,
+      "unavailable": 20,
+      "rbf_max_response_mare_by_budget": {
+        "12": {
+          "random": 1.3594988089431386,
+          "maximin": 0.8526988625443831,
+          "d_optimal": 0.9457012105637272,
+          "kernel_ivr": 0.8180612054728827
+        },
+        "16": {
+          "random": 0.6446307745839367,
+          "maximin": 0.4689923768970251,
+          "d_optimal": 0.6008455663283739,
+          "kernel_ivr": 0.6919228818957049
+        },
+        "24": {
+          "random": 0.4192479254035838,
+          "maximin": 0.4135147102799664,
+          "d_optimal": 0.35827838096043435,
+          "kernel_ivr": 0.36153830874567827
+        }
+      },
+      "summary": [
+        {
+          "strategy": "random",
+          "family": "semiempirical",
+          "budget_groups": 9,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 2.3342785775316472,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 5.928727233317724,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.891230374358401,
+          "mass_flow_kg_s_mare_std_percent": 0.09824169570929127,
+          "power_w_mare_mean_percent": 4.722913269414552,
+          "power_w_mare_std_percent": 0.8935854166520879
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.5981853699267132,
+          "mass_flow_kg_s_mare_std_percent": 0.06449902568927834,
+          "power_w_mare_mean_percent": 3.6714881961541996,
+          "power_w_mare_std_percent": 0.38616283545453334
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.4401656254859716,
+          "mass_flow_kg_s_mare_std_percent": 0.13338649902549782,
+          "power_w_mare_mean_percent": 3.360452687509654,
+          "power_w_mare_std_percent": 0.22001828539225782
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical",
+          "budget_groups": 42,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.394533576299439,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.798356885229022,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "random",
+          "family": "affine",
+          "budget_groups": 9,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.5507967669085723,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.1277311678040867,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "random",
+          "family": "affine",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.4589262794739466,
+          "mass_flow_kg_s_mare_std_percent": 0.14979747713801614,
+          "power_w_mare_mean_percent": 1.031750018418591,
+          "power_w_mare_std_percent": 0.07200207466843726
+        },
+        {
+          "strategy": "random",
+          "family": "affine",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.3803241114711875,
+          "mass_flow_kg_s_mare_std_percent": 0.12964391545832538,
+          "power_w_mare_mean_percent": 0.8697124177834313,
+          "power_w_mare_std_percent": 0.06209855111904923
+        },
+        {
+          "strategy": "random",
+          "family": "affine",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.322083525838757,
+          "mass_flow_kg_s_mare_std_percent": 0.14673457910268184,
+          "power_w_mare_mean_percent": 0.7858754300857976,
+          "power_w_mare_std_percent": 0.0530171897088301
+        },
+        {
+          "strategy": "random",
+          "family": "affine",
+          "budget_groups": 42,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.3134993176229581,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.6244936816305067,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "random",
+          "family": "ahri10",
+          "budget_groups": 9,
+          "trials": 5,
+          "available_trials": 0,
+          "mean_predicted_points": null,
+          "mass_flow_kg_s_mare_mean_percent": null,
+          "mass_flow_kg_s_mare_std_percent": null,
+          "power_w_mare_mean_percent": null,
+          "power_w_mare_std_percent": null
+        },
+        {
+          "strategy": "random",
+          "family": "ahri10",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.6802992305430887,
+          "mass_flow_kg_s_mare_std_percent": 0.13292136340310862,
+          "power_w_mare_mean_percent": 0.3313400062250282,
+          "power_w_mare_std_percent": 0.07240311873073145
+        },
+        {
+          "strategy": "random",
+          "family": "ahri10",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.5873990015691155,
+          "mass_flow_kg_s_mare_std_percent": 0.17600885443747333,
+          "power_w_mare_mean_percent": 0.23860570801420694,
+          "power_w_mare_std_percent": 0.045589306847188385
+        },
+        {
+          "strategy": "random",
+          "family": "ahri10",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.33134803304645777,
+          "mass_flow_kg_s_mare_std_percent": 0.026927992640175404,
+          "power_w_mare_mean_percent": 0.18260643039153257,
+          "power_w_mare_std_percent": 0.018847672999652374
+        },
+        {
+          "strategy": "random",
+          "family": "ahri10",
+          "budget_groups": 42,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.2944754650653432,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.13572078075633764,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical_rbf",
+          "budget_groups": 9,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.6579701659719568,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 4.102249877144539,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical_rbf",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.8679487176281192,
+          "mass_flow_kg_s_mare_std_percent": 0.1544631485407536,
+          "power_w_mare_mean_percent": 1.3594988089431386,
+          "power_w_mare_std_percent": 1.0212558660422666
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical_rbf",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.6404245600822738,
+          "mass_flow_kg_s_mare_std_percent": 0.153778350752878,
+          "power_w_mare_mean_percent": 0.6446307745839367,
+          "power_w_mare_std_percent": 0.14209655663953
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical_rbf",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.413498911783247,
+          "mass_flow_kg_s_mare_std_percent": 0.01935037734043459,
+          "power_w_mare_mean_percent": 0.4192479254035838,
+          "power_w_mare_std_percent": 0.06520706607542007
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical_rbf",
+          "budget_groups": 42,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.3595311657438954,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.26283325642909766,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical",
+          "budget_groups": 9,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 2.3342785775316472,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 5.928727233317724,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.936922904091574,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 3.019009698250804,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.6612698204380412,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.8841384724617254,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.490755522768395,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.774377352050799,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical",
+          "budget_groups": 42,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.394533576299439,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.798356885229022,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "affine",
+          "budget_groups": 9,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.5507967669085723,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.1277311678040867,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "affine",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.5490242315150644,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.8576436793218226,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "affine",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.3448737242312372,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.7524816435889509,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "affine",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.4238391577371194,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.644238326303879,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "affine",
+          "budget_groups": 42,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.3134993176229581,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.6244936816305067,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "ahri10",
+          "budget_groups": 9,
+          "trials": 5,
+          "available_trials": 0,
+          "mean_predicted_points": null,
+          "mass_flow_kg_s_mare_mean_percent": null,
+          "mass_flow_kg_s_mare_std_percent": null,
+          "power_w_mare_mean_percent": null,
+          "power_w_mare_std_percent": null
+        },
+        {
+          "strategy": "maximin",
+          "family": "ahri10",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.944184042149716,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.3920136610034967,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "ahri10",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.4136910452846189,
+          "mass_flow_kg_s_mare_std_percent": 5.551115123125783e-17,
+          "power_w_mare_mean_percent": 0.19309761808386042,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "ahri10",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.36801101287389787,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.14217881295881252,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "ahri10",
+          "budget_groups": 42,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.2944754650653432,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.13572078075633764,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical_rbf",
+          "budget_groups": 9,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.6579701659719568,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 4.102249877144539,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical_rbf",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.803869461273728,
+          "mass_flow_kg_s_mare_std_percent": 1.1102230246251565e-16,
+          "power_w_mare_mean_percent": 0.8526988625443831,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical_rbf",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.40770138271831274,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.4689923768970251,
+          "power_w_mare_std_percent": 5.551115123125783e-17
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical_rbf",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.4135147102799664,
+          "mass_flow_kg_s_mare_std_percent": 5.551115123125783e-17,
+          "power_w_mare_mean_percent": 0.313344134416955,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical_rbf",
+          "budget_groups": 42,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.3595311657438954,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.26283325642909766,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical",
+          "budget_groups": 9,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 2.3342785775316472,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 5.928727233317724,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.8229109771823748,
+          "mass_flow_kg_s_mare_std_percent": 2.220446049250313e-16,
+          "power_w_mare_mean_percent": 3.133701366437815,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.649831327606157,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 3.2154007539767546,
+          "power_w_mare_std_percent": 4.440892098500626e-16
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.3415035961966073,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.9706456421451155,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical",
+          "budget_groups": 42,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.394533576299439,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.798356885229022,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "affine",
+          "budget_groups": 9,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.5507967669085723,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.1277311678040867,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "affine",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.4118819915024348,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.8647870755306013,
+          "power_w_mare_std_percent": 1.1102230246251565e-16
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "affine",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.3787872506976004,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.7868644444066697,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "affine",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.4036525336387606,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.6431080755363731,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "affine",
+          "budget_groups": 42,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.3134993176229581,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.6244936816305067,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "ahri10",
+          "budget_groups": 9,
+          "trials": 5,
+          "available_trials": 0,
+          "mean_predicted_points": null,
+          "mass_flow_kg_s_mare_mean_percent": null,
+          "mass_flow_kg_s_mare_std_percent": null,
+          "power_w_mare_mean_percent": null,
+          "power_w_mare_std_percent": null
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "ahri10",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.8998897183673231,
+          "mass_flow_kg_s_mare_std_percent": 1.1102230246251565e-16,
+          "power_w_mare_mean_percent": 0.7469008767580156,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "ahri10",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.295238972329188,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.1699240353149852,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "ahri10",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.2969253733401604,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.18171612501674725,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "ahri10",
+          "budget_groups": 42,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.2944754650653432,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.13572078075633764,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical_rbf",
+          "budget_groups": 9,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.6579701659719568,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 4.102249877144539,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical_rbf",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.9457012105637272,
+          "mass_flow_kg_s_mare_std_percent": 1.1102230246251565e-16,
+          "power_w_mare_mean_percent": 0.8537694142917506,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical_rbf",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.6008455663283739,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.4972364552990253,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical_rbf",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.34778910762488696,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.35827838096043435,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical_rbf",
+          "budget_groups": 42,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.3595311657438954,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.26283325642909766,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical",
+          "budget_groups": 9,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 2.3342785775316472,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 5.928727233317724,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.8762356192821954,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 3.0614814254152343,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.6076270425982884,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.949561414826094,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.4664499930982353,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.807357836974989,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical",
+          "budget_groups": 42,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.394533576299439,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.798356885229022,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "affine",
+          "budget_groups": 9,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.5507967669085723,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.1277311678040867,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "affine",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.4302900968472798,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.8013791587440533,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "affine",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.5610940722117022,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.7112435063709862,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "affine",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.3847414092554207,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.6662772930025271,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "affine",
+          "budget_groups": 42,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.3134993176229581,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.6244936816305067,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "ahri10",
+          "budget_groups": 9,
+          "trials": 5,
+          "available_trials": 0,
+          "mean_predicted_points": null,
+          "mass_flow_kg_s_mare_mean_percent": null,
+          "mass_flow_kg_s_mare_std_percent": null,
+          "power_w_mare_mean_percent": null,
+          "power_w_mare_std_percent": null
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "ahri10",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.7455099299098018,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.1842015166411646,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "ahri10",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.37730854283376614,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.14245357479415374,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "ahri10",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.3074945382475954,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.13592964980344568,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "ahri10",
+          "budget_groups": 42,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.2944754650653432,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.13572078075633764,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical_rbf",
+          "budget_groups": 9,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.6579701659719568,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 4.102249877144539,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical_rbf",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.7112644298309378,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.8180612054728827,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical_rbf",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.5116243240763948,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.6919228818957049,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical_rbf",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.36153830874567827,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.3071593589827966,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical_rbf",
+          "budget_groups": 42,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 12.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.3595311657438954,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.26283325642909766,
+          "power_w_mare_std_percent": 0.0
+        }
+      ]
+    },
+    "arep11_r32_65f": {
+      "budgets": [
+        8,
+        12,
+        16,
+        24,
+        35
+      ],
+      "records": 400,
+      "unavailable": 20,
+      "rbf_max_response_mare_by_budget": {
+        "12": {
+          "random": 0.917935581853538,
+          "maximin": 0.7575349500845796,
+          "d_optimal": 0.7313134654478448,
+          "kernel_ivr": 0.7869647745091213
+        },
+        "16": {
+          "random": 0.7893101560452601,
+          "maximin": 0.7182232270492672,
+          "d_optimal": 0.7414452302834107,
+          "kernel_ivr": 0.6540563219436757
+        },
+        "24": {
+          "random": 0.5808973632815458,
+          "maximin": 0.4933616709194921,
+          "d_optimal": 0.7426583706483281,
+          "kernel_ivr": 0.5274369352073704
+        }
+      },
+      "summary": [
+        {
+          "strategy": "random",
+          "family": "semiempirical",
+          "budget_groups": 8,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.5705711291003024,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 5.406788438379587,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.288458308413892,
+          "mass_flow_kg_s_mare_std_percent": 0.09918189976386341,
+          "power_w_mare_mean_percent": 3.634073334192562,
+          "power_w_mare_std_percent": 0.506518624439638
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.2321279624521027,
+          "mass_flow_kg_s_mare_std_percent": 0.09630348506406575,
+          "power_w_mare_mean_percent": 2.7922473550479845,
+          "power_w_mare_std_percent": 0.35139044926648083
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.2516967871670341,
+          "mass_flow_kg_s_mare_std_percent": 0.07325858520409974,
+          "power_w_mare_mean_percent": 2.282756010722787,
+          "power_w_mare_std_percent": 0.14159357022753705
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical",
+          "budget_groups": 35,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.2421117035209306,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.2233046937856393,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "random",
+          "family": "affine",
+          "budget_groups": 8,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.45540927645612683,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.3510166969285384,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "random",
+          "family": "affine",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.4971026798839717,
+          "mass_flow_kg_s_mare_std_percent": 0.05209116499923311,
+          "power_w_mare_mean_percent": 1.8079940682578683,
+          "power_w_mare_std_percent": 0.25602382129304607
+        },
+        {
+          "strategy": "random",
+          "family": "affine",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.48889766514812266,
+          "mass_flow_kg_s_mare_std_percent": 0.03928819731598848,
+          "power_w_mare_mean_percent": 1.5850818446016501,
+          "power_w_mare_std_percent": 0.2602845033750261
+        },
+        {
+          "strategy": "random",
+          "family": "affine",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.5348681590501327,
+          "mass_flow_kg_s_mare_std_percent": 0.06261437915514848,
+          "power_w_mare_mean_percent": 1.268911644472551,
+          "power_w_mare_std_percent": 0.17801599296251824
+        },
+        {
+          "strategy": "random",
+          "family": "affine",
+          "budget_groups": 35,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.5280354177797564,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.1284916980368664,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "random",
+          "family": "ahri10",
+          "budget_groups": 8,
+          "trials": 5,
+          "available_trials": 0,
+          "mean_predicted_points": null,
+          "mass_flow_kg_s_mare_mean_percent": null,
+          "mass_flow_kg_s_mare_std_percent": null,
+          "power_w_mare_mean_percent": null,
+          "power_w_mare_std_percent": null
+        },
+        {
+          "strategy": "random",
+          "family": "ahri10",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.0480791102480982,
+          "mass_flow_kg_s_mare_std_percent": 0.9254625051240749,
+          "power_w_mare_mean_percent": 0.8512701026932676,
+          "power_w_mare_std_percent": 0.3242427350400626
+        },
+        {
+          "strategy": "random",
+          "family": "ahri10",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.4537174199685934,
+          "mass_flow_kg_s_mare_std_percent": 0.08946808603753321,
+          "power_w_mare_mean_percent": 0.6134917467503687,
+          "power_w_mare_std_percent": 0.23003052462611162
+        },
+        {
+          "strategy": "random",
+          "family": "ahri10",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.2966070555632405,
+          "mass_flow_kg_s_mare_std_percent": 0.05293177668380648,
+          "power_w_mare_mean_percent": 0.5335111542265232,
+          "power_w_mare_std_percent": 0.04519845566641631
+        },
+        {
+          "strategy": "random",
+          "family": "ahri10",
+          "budget_groups": 35,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.2253182681307686,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.48235258931601077,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical_rbf",
+          "budget_groups": 8,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.200636877087622,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 5.873763707685431,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical_rbf",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.6272763972450524,
+          "mass_flow_kg_s_mare_std_percent": 0.16091052793108812,
+          "power_w_mare_mean_percent": 0.917935581853538,
+          "power_w_mare_std_percent": 0.06802754786262326
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical_rbf",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.44809687562011397,
+          "mass_flow_kg_s_mare_std_percent": 0.09559951623214304,
+          "power_w_mare_mean_percent": 0.7893101560452601,
+          "power_w_mare_std_percent": 0.14963449665615697
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical_rbf",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.4140336807068447,
+          "mass_flow_kg_s_mare_std_percent": 0.05590615475556811,
+          "power_w_mare_mean_percent": 0.5808973632815458,
+          "power_w_mare_std_percent": 0.03843842547047786
+        },
+        {
+          "strategy": "random",
+          "family": "semiempirical_rbf",
+          "budget_groups": 35,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.2439494245366991,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.4650392559606075,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical",
+          "budget_groups": 8,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.5705711291003024,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 5.406788438379587,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.2129553516783598,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.6570854387998377,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.269945964667324,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.2936257566041376,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.282141692144172,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.166088919790695,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical",
+          "budget_groups": 35,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.2421117035209306,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.2233046937856393,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "affine",
+          "budget_groups": 8,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.45540927645612683,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.3510166969285384,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "affine",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.46425987008150144,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.4409609390551736,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "affine",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.543244796462129,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.177768269978041,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "affine",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.6061822361113511,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.0585885230789127,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "affine",
+          "budget_groups": 35,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.5280354177797564,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.1284916980368664,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "ahri10",
+          "budget_groups": 8,
+          "trials": 5,
+          "available_trials": 0,
+          "mean_predicted_points": null,
+          "mass_flow_kg_s_mare_mean_percent": null,
+          "mass_flow_kg_s_mare_std_percent": null,
+          "power_w_mare_mean_percent": null,
+          "power_w_mare_std_percent": null
+        },
+        {
+          "strategy": "maximin",
+          "family": "ahri10",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.22980783378924619,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.5599215613672315,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "ahri10",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.37055351043112084,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.4805819054783577,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "ahri10",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.27722204382915505,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.48476594495229897,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "ahri10",
+          "budget_groups": 35,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.2253182681307686,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.48235258931601077,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical_rbf",
+          "budget_groups": 8,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.200636877087622,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 5.873763707685431,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical_rbf",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.45601518313066025,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.7575349500845796,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical_rbf",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.22798734857554237,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.7182232270492672,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical_rbf",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.2450735343074062,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.4933616709194921,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "maximin",
+          "family": "semiempirical_rbf",
+          "budget_groups": 35,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.2439494245366991,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.4650392559606075,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical",
+          "budget_groups": 8,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.5705711291003024,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 5.406788438379587,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.1475755261524423,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 3.1383350046651293,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.0250308716757064,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 3.204221751109453,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.021723590695942,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 3.0313625505430033,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical",
+          "budget_groups": 35,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.2421117035209306,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.2233046937856393,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "affine",
+          "budget_groups": 8,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.45540927645612683,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.3510166969285384,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "affine",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.46727850934063736,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.6208040642688792,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "affine",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.44971167928121947,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.6331884511257333,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "affine",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.44288734024940046,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.5642970841015713,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "affine",
+          "budget_groups": 35,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.5280354177797564,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.1284916980368664,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "ahri10",
+          "budget_groups": 8,
+          "trials": 5,
+          "available_trials": 0,
+          "mean_predicted_points": null,
+          "mass_flow_kg_s_mare_mean_percent": null,
+          "mass_flow_kg_s_mare_std_percent": null,
+          "power_w_mare_mean_percent": null,
+          "power_w_mare_std_percent": null
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "ahri10",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.3379448530656448,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.6891142799246763,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "ahri10",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.2881268608460985,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.6544362147267346,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "ahri10",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.30081575102225755,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.6415927975015323,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "ahri10",
+          "budget_groups": 35,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.2253182681307686,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.48235258931601077,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical_rbf",
+          "budget_groups": 8,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.200636877087622,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 5.873763707685431,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical_rbf",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.7313134654478448,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.6989415750115535,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical_rbf",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.42471264372575207,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.7414452302834107,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical_rbf",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.32762787018600914,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.7426583706483281,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "d_optimal",
+          "family": "semiempirical_rbf",
+          "budget_groups": 35,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.2439494245366991,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.4650392559606075,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical",
+          "budget_groups": 8,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.5705711291003024,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 5.406788438379587,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.1679423286943935,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.7780166208170134,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.2293744206011326,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.2311970584357015,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.1423076110628707,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.3505584994915294,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical",
+          "budget_groups": 35,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.2421117035209306,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.2233046937856393,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "affine",
+          "budget_groups": 8,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.45540927645612683,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 2.3510166969285384,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "affine",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.4746523298853922,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.5362602684085715,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "affine",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.5800265588187403,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.2967376617481108,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "affine",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.5870752255327971,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.1244298385884988,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "affine",
+          "budget_groups": 35,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.5280354177797564,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 1.1284916980368664,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "ahri10",
+          "budget_groups": 8,
+          "trials": 5,
+          "available_trials": 0,
+          "mean_predicted_points": null,
+          "mass_flow_kg_s_mare_mean_percent": null,
+          "mass_flow_kg_s_mare_std_percent": null,
+          "power_w_mare_mean_percent": null,
+          "power_w_mare_std_percent": null
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "ahri10",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.3088854023630716,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.7636419548082019,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "ahri10",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.27357834379483914,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.5778270880029224,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "ahri10",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.36004408809261146,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.462600133409905,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "ahri10",
+          "budget_groups": 35,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.2253182681307686,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.48235258931601077,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical_rbf",
+          "budget_groups": 8,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 1.200636877087622,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 5.873763707685431,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical_rbf",
+          "budget_groups": 12,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.30735487145292173,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.7869647745091213,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical_rbf",
+          "budget_groups": 16,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.30701584068428156,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.6540563219436757,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical_rbf",
+          "budget_groups": 24,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.33333499387958265,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.5274369352073704,
+          "power_w_mare_std_percent": 0.0
+        },
+        {
+          "strategy": "kernel_ivr",
+          "family": "semiempirical_rbf",
+          "budget_groups": 35,
+          "trials": 5,
+          "available_trials": 5,
+          "mean_predicted_points": 10.0,
+          "mass_flow_kg_s_mare_mean_percent": 0.2439494245366991,
+          "mass_flow_kg_s_mare_std_percent": 0.0,
+          "power_w_mare_mean_percent": 0.4650392559606075,
+          "power_w_mare_std_percent": 0.0
+        }
+      ]
+    },
+    "kernel_ivr_beats_maximin_cells": {
+      "wins": 3,
+      "cells": 6,
+      "verdict": "no_majority"
+    }
+  }
+}

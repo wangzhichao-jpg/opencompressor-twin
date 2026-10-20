@@ -1,0 +1,45 @@
+{
+  "dataset_id": "arep21-copeland-zs21kae-r404a-65f-v1",
+  "source_kind": "experiment",
+  "validation_role": "public_validation",
+  "admission_status": "reviewed_published_experiment_with_nominal_speed_limitation",
+  "source": "AHRI Low-GWP AREP Test Report #21, Shrestha, Sharma and Abdelaziz, ORNL, August 5 2013; Appendix A Table A1, mass-flow/electrical-power test results; not Appendix B fitted coefficients",
+  "source_url": "https://info.ornl.gov/sites/publications/files/Pub42278.pdf",
+  "source_location": "PDF physical page 14, printed page 13, Table A1; specification on PDF physical page 6, printed page 5",
+  "accessed_at": "2026-10-19",
+  "license": "Public ORNL/DOE technical report; no explicit dataset CC license stated. Numerical transcription with attribution; original report link-only.",
+  "redistribution_status": "original_report_link_only; numerical_facts_attributed_no_CC_claim",
+  "raw_sha256": "e2b1f34299e427a3927df6ddc6660253f1387e12e385c9fbab66a42a6743012f",
+  "transcription_sha256": "48566d1864fcaa5dd4f96d5b96a989a1974f552310e45531d7d8ca5829b93dd0",
+  "transform_script": "tools/prepare_arep21.py",
+  "transform_script_sha256": "680ee09a9fd9fb22d04982d533c5b50ac90686af158f98b4e2649dffc96907ce",
+  "pressure_basis": "absolute",
+  "speed_definition": "nominal_mechanical_rpm",
+  "nominal_speed_provenance": {
+    "source_location": "AREP21 PDF6/printed5 sec2b, 3.11in3/rev and377.71ft3/hr",
+    "volume_rate_m3_s": 0.0029709878128512,
+    "definition": "60 * rated_volume_rate_m3_s / displacement_m3_rev; NOT frequency conversion, NOT measured per-point speed"
+  },
+  "power_boundary": "electrical_input",
+  "suction_regime": "fixed_actual_suction_temperature_65F",
+  "supply_frequency_hz": 60,
+  "compressor": {
+    "compressor_type": "scroll",
+    "manufacturer": "Copeland",
+    "model_id": "ZS21KAE-PFV",
+    "refrigerant": "R404A",
+    "displacement_m3_rev": 5.0963769039999996e-05
+  },
+  "measurement_boundary": "Refrigerant flow via Micro Motion Elite; compressor electrical power via Yokogawa PR300;230V; chamber95+/-1F;original POE lubricant",
+  "uncertainty_source": "Report Table2 PDF8: flow +/-0.10%, power +/-0.5%,RTD +/-0.4F, pressure0.25%FS; accuracy specifications, NOT converted to standard uncertainty",
+  "known_limitations": [
+    "Speed is nominal-equivalent from published rated displacement rate, not per-point shaft measurement; no cross-speed or absolute volumetric-efficiency validation",
+    "Published header pressures rounded to whole psia; used as-is, not silently replaced with simulated pressures",
+    "Source used REFPROP9.0, current model CoolProp8.0.0; property/pressure-rounding differences remain",
+    "Only R404A TableA1 fixed65F slice; no pooling of alternate fluids, other superheat regimes or manufacturer-map points",
+    "Source capacities normalized to zero subcooling; retained for extraction audit only, not used as independent supervision or claimed predicted cooling capacity",
+    "Original hermetic compressor contains POE oil; oil circulation/correction not reported; no oil-mixture model or oil-free claim",
+    "Input hull vertices intentionally observed; evaluation tests interior interpolation, not boundary or cross-speed generalization",
+    "Single public report/single machine; held-out conditions share laboratory/instrument calibration and do not prove cross-brand transfer"
+  ]
+}

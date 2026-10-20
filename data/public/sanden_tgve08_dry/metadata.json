@@ -1,0 +1,37 @@
+{
+  "dataset_id": "sanden-tgve08-dry-shaft-exploratory-v1",
+  "source_kind": "experiment",
+  "validation_role": "public_validation",
+  "admission_status": "exploratory_only",
+  "source": "Leclercq, Bederna and Lemort; Zenodo record 14603617 sanden_no_oil.csv; related paper DOI 10.1016/j.ijrefrig.2025.05.013",
+  "source_url": "https://zenodo.org/records/14603617",
+  "license": "CC BY 4.0; attribution to Applied Thermodynamics Laboratory, University of Liege and Nicolas Leclercq",
+  "pressure_basis": "absolute",
+  "speed_definition": "mechanical_rpm",
+  "power_boundary": "compressor_shaft_after_belt_loss_NOT_electrical_input",
+  "compressor": {
+    "compressor_type": "scroll",
+    "manufacturer": "Sanden",
+    "model_id": "TGVE08-retrofitted-open-drive",
+    "refrigerant": "R1233zd(E)",
+    "displacement_m3_rev": 8.6e-05
+  },
+  "raw_sha256": "c399fd008e891abec4934f5ff01a5968949b5131222589ad193e9a483d4fbc2d",
+  "raw_md5": "5325b49d098b133ce00d878080d00891",
+  "source_version": "Zenodo V1, modified 2026-05-29",
+  "accessed_at": "2026-10-19",
+  "redistribution_status": "allowed_with_attribution",
+  "reference_enthalpy_difference": "not provided; no capacity/COP comparison",
+  "transform_script": "tools/prepare_sanden.py",
+  "source_location": "CSV source_csv_line; paper sec2.1/2.2, Table1, sec3.1, Eq9/11/12",
+  "grouping": "Connected input clusters: |dps|<=0.1bar, |dpd|<=0.2bar, |dn|<=50rpm; ignore temperature conservatively; original nominal IDs unavailable",
+  "uncertainty_source": "Adjacent source columns retained, not used as fitting weights; no metrological interpretation assumed",
+  "known_limitations": [
+    "Dry points used for instrumentation calibration by source authors; common calibration/systematic dependence remains",
+    "Retrofitted open-drive machine, no electrical input measurement; cannot validate hermetic electrical losses",
+    "Conservative subset excludes all oil and liquid-fed cases; not the whole two-phase campaign",
+    "Source PDF fetched directly failed; source sections read through Tavily text extraction, no original-page visual crosscheck",
+    "Few groups, two speed clusters and sparse 4D input coverage; hull refusal may preclude a meaningful holdout score",
+    "This preparation and split were fixed before model scoring; no outcome-driven retuning"
+  ]
+}

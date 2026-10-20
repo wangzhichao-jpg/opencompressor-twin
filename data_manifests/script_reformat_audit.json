@@ -1,0 +1,105 @@
+{
+  "purpose": "ruff format/lint changed script bytes; regenerated outputs compared with frozen data",
+  "scripts": {
+    "tools/prepare_arep21.py": {
+      "recorded_sha256_in_frozen_metadata": "680ee09a9fd9fb22d04982d533c5b50ac90686af158f98b4e2649dffc96907ce",
+      "current_sha256": "5a1428276ad09d3e1ad84ca2726ce504641888439a76dcfe4ca5386f660395a0",
+      "outputs": [
+        {
+          "file": "data/public/arep21_r404a_65f/data.csv",
+          "status": "identical_bytes"
+        },
+        {
+          "file": "data/public/arep21_r404a_65f/extraction_audit.json",
+          "status": "identical_bytes"
+        },
+        {
+          "file": "data/public/arep21_r404a_65f/metadata.json",
+          "status": "identical_except_transform_script_sha256"
+        },
+        {
+          "file": "data/public/arep21_r404a_65f/split.json",
+          "status": "identical_bytes"
+        },
+        {
+          "file": "data_manifests/arep21_r404a_65f.json",
+          "status": "identical_except_transform_script_sha256"
+        }
+      ]
+    },
+    "tools/prepare_arep11.py": {
+      "recorded_sha256_in_frozen_metadata": "6ac5508612c4817b1f376ca41d770f674cff794235fcee08c703d7bca012a67a",
+      "current_sha256": "657c254ab19ba624d8fa1f1015a85e801ea8b6ef221c135e163c1adb0ea3f620",
+      "outputs": [
+        {
+          "file": "data/public/arep11_r410a_65f/data.csv",
+          "status": "identical_bytes"
+        },
+        {
+          "file": "data/public/arep11_r410a_65f/extraction_audit.json",
+          "status": "identical_bytes"
+        },
+        {
+          "file": "data/public/arep11_r410a_65f/metadata.json",
+          "status": "identical_except_transform_script_sha256"
+        },
+        {
+          "file": "data/public/arep11_r410a_65f/split.json",
+          "status": "identical_bytes"
+        },
+        {
+          "file": "data/public/arep11_r32_65f/data.csv",
+          "status": "identical_bytes"
+        },
+        {
+          "file": "data/public/arep11_r32_65f/extraction_audit.json",
+          "status": "identical_bytes"
+        },
+        {
+          "file": "data/public/arep11_r32_65f/metadata.json",
+          "status": "identical_except_transform_script_sha256"
+        },
+        {
+          "file": "data/public/arep11_r32_65f/split.json",
+          "status": "identical_bytes"
+        },
+        {
+          "file": "data_manifests/arep11_r410a_65f.json",
+          "status": "identical_except_transform_script_sha256"
+        },
+        {
+          "file": "data_manifests/arep11_r32_65f.json",
+          "status": "identical_except_transform_script_sha256"
+        }
+      ]
+    },
+    "tools/prepare_sanden.py": {
+      "recorded_sha256_in_frozen_metadata": null,
+      "current_sha256": "9e4bcb0466f4b6263b96a3b8855722eda933e1331ab68629378f06202de9e249",
+      "outputs": [
+        {
+          "file": "data/public/sanden_tgve08_dry/data.csv",
+          "status": "identical_bytes"
+        },
+        {
+          "file": "data/public/sanden_tgve08_dry/extraction_audit.json",
+          "status": "identical_bytes"
+        },
+        {
+          "file": "data/public/sanden_tgve08_dry/metadata.json",
+          "status": "identical_bytes"
+        },
+        {
+          "file": "data/public/sanden_tgve08_dry/split.json",
+          "status": "identical_bytes"
+        },
+        {
+          "file": "data_manifests/sanden_tgve08_dry.json",
+          "status": "identical_bytes"
+        }
+      ]
+    }
+  },
+  "conclusion": "equivalent",
+  "policy": "Frozen metadata keep the original hash; scripts are AST-equivalent reformatted versions. Data-preparation scripts are excluded from future automatic formatting."
+}

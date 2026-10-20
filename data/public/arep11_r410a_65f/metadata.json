@@ -1,0 +1,42 @@
+{
+  "dataset_id": "arep11_r410a_65f-v1",
+  "source_kind": "experiment",
+  "validation_role": "public_validation",
+  "admission_status": "reviewed_published_experiment_with_nominal_speed_limitation",
+  "source": "AHRI Low-GWP AREP Test Report #11, Compressor Calorimeter Test of R-410A Alternatives R-32, DR-5, and L-41A Using a Scroll Compressor, ORNL; Appendix A Table A3 measured results; not Appendix B coefficients",
+  "source_url": "https://info.ornl.gov/sites/publications/files/Pub44928.pdf",
+  "source_location": "PDF physical page 15, printed page 14, Table A3; specification on PDF physical page 6, printed page 5",
+  "accessed_at": "2026-10-20",
+  "license": "Public ORNL/DOE technical report; no explicit dataset CC license stated. Numerical transcription with attribution; original report link-only.",
+  "redistribution_status": "pending release decision; numerical facts attributed, no CC claim",
+  "raw_sha256": "7da8c43e3c3f8ba3905a016f56a6205db2049ed7c5e7403db70fbe4ddbafc291",
+  "transcription_sha256": "a8a3def4278baf7188df5508659e9012622b7b54c29a0ef0bccbdce99759d1d4",
+  "transform_script": "tools/prepare_arep11.py",
+  "transform_script_sha256": "6ac5508612c4817b1f376ca41d770f674cff794235fcee08c703d7bca012a67a",
+  "pressure_basis": "absolute",
+  "speed_definition": "nominal_mechanical_rpm",
+  "nominal_speed_provenance": {
+    "source_location": "AREP11 PDF6/printed5 sec2b, 1.24 in3/rev and 150.69 ft3/hr",
+    "volume_rate_m3_s": 0.0011852960035968001,
+    "definition": "60 * rated_volume_rate_m3_s / displacement_m3_rev; NOT frequency conversion, NOT measured per-point speed"
+  },
+  "power_boundary": "electrical_input",
+  "suction_regime": "fixed_actual_suction_temperature_65F",
+  "supply_frequency_hz": 60,
+  "compressor": {
+    "compressor_type": "scroll",
+    "manufacturer": "Copeland",
+    "model_id": "ZP21K5E-PFV",
+    "refrigerant": "R410A",
+    "displacement_m3_rev": 2.031995936e-05
+  },
+  "measurement_boundary": "Micro Motion Elite mass flow; Yokogawa PR300 compressor power; chamber 95+/-1F; original POE",
+  "known_limitations": [
+    "Same ORNL laboratory/instrument family as AREP21; different compressor model, not an independent laboratory",
+    "Speed is nominal-equivalent from rated displacement rate, not per-point measured speed",
+    "Header pressures printed to whole psia; used as printed",
+    "Source used REFPROP; this program uses CoolProp (R410A as pseudo-pure)",
+    "Fixed 65F suction temperature only; superheat tables and DR-5/L-41A excluded by frozen protocol",
+    "Hull vertices observed in training; holdout tests interior interpolation only"
+  ]
+}

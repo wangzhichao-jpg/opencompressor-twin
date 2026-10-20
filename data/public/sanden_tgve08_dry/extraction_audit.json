@@ -1,0 +1,573 @@
+{
+  "raw_rows": 72,
+  "included_rows": 15,
+  "groups": 12,
+  "raw_sha256": "c399fd008e891abec4934f5ff01a5968949b5131222589ad193e9a483d4fbc2d",
+  "rows": [
+    {
+      "source_csv_line": 2,
+      "included": false,
+      "reasons": [
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 3,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 4,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 5,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 6,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 7,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 8,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 9,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 10,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 11,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 12,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 13,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 14,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 15,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 16,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 17,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 18,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 19,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 20,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 21,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 22,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 23,
+      "included": true,
+      "reasons": []
+    },
+    {
+      "source_csv_line": 24,
+      "included": false,
+      "reasons": [
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 25,
+      "included": false,
+      "reasons": [
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 26,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 27,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 28,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 29,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 30,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 31,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 32,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 33,
+      "included": true,
+      "reasons": []
+    },
+    {
+      "source_csv_line": 34,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 35,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 36,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 37,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 38,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 39,
+      "included": true,
+      "reasons": []
+    },
+    {
+      "source_csv_line": 40,
+      "included": false,
+      "reasons": [
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 41,
+      "included": false,
+      "reasons": [
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 42,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 43,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 44,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 45,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 46,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 47,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 48,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 49,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 50,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 51,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 52,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 53,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 54,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 55,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 56,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "insufficient superheat margin",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 57,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 58,
+      "included": false,
+      "reasons": [
+        "inlet quality below one",
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 59,
+      "included": true,
+      "reasons": []
+    },
+    {
+      "source_csv_line": 60,
+      "included": true,
+      "reasons": []
+    },
+    {
+      "source_csv_line": 61,
+      "included": true,
+      "reasons": []
+    },
+    {
+      "source_csv_line": 62,
+      "included": true,
+      "reasons": []
+    },
+    {
+      "source_csv_line": 63,
+      "included": true,
+      "reasons": []
+    },
+    {
+      "source_csv_line": 64,
+      "included": true,
+      "reasons": []
+    },
+    {
+      "source_csv_line": 65,
+      "included": false,
+      "reasons": [
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 66,
+      "included": false,
+      "reasons": [
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 67,
+      "included": false,
+      "reasons": [
+        "liquid feed >=0.1 g/s; excluded conservatively"
+      ]
+    },
+    {
+      "source_csv_line": 68,
+      "included": true,
+      "reasons": []
+    },
+    {
+      "source_csv_line": 69,
+      "included": true,
+      "reasons": []
+    },
+    {
+      "source_csv_line": 70,
+      "included": true,
+      "reasons": []
+    },
+    {
+      "source_csv_line": 71,
+      "included": true,
+      "reasons": []
+    },
+    {
+      "source_csv_line": 72,
+      "included": true,
+      "reasons": []
+    },
+    {
+      "source_csv_line": 73,
+      "included": true,
+      "reasons": []
+    }
+  ]
+}

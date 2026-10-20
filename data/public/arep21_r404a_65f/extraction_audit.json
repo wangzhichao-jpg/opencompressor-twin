@@ -1,0 +1,522 @@
+{
+  "raw_sha256": "e2b1f34299e427a3927df6ddc6660253f1387e12e385c9fbab66a42a6743012f",
+  "rows": [
+    {
+      "point_id": "A1-Td140-Te5",
+      "source_cell": "PDF14/printed13 TableA1 Td=140F Te=5F, M/P rows",
+      "mass_flow_lb_h": 338.1,
+      "power_w": 3837,
+      "capacity_power_vs_eer_absolute_difference": 0.001240552514985449,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td140-Te10",
+      "source_cell": "PDF14/printed13 TableA1 Td=140F Te=10F, M/P rows",
+      "mass_flow_lb_h": 379.2,
+      "power_w": 3889,
+      "capacity_power_vs_eer_absolute_difference": 0.000537413216765259,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td140-Te15",
+      "source_cell": "PDF14/printed13 TableA1 Td=140F Te=15F, M/P rows",
+      "mass_flow_lb_h": 425.7,
+      "power_w": 3952,
+      "capacity_power_vs_eer_absolute_difference": 0.0033198380566794583,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td140-Te20",
+      "source_cell": "PDF14/printed13 TableA1 Td=140F Te=20F, M/P rows",
+      "mass_flow_lb_h": 475.2,
+      "power_w": 3998,
+      "capacity_power_vs_eer_absolute_difference": 0.003206603301650901,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td140-Te25",
+      "source_cell": "PDF14/printed13 TableA1 Td=140F Te=25F, M/P rows",
+      "mass_flow_lb_h": 529.3,
+      "power_w": 4052,
+      "capacity_power_vs_eer_absolute_difference": 0.0025962487660411426,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td140-Te30",
+      "source_cell": "PDF14/printed13 TableA1 Td=140F Te=30F, M/P rows",
+      "mass_flow_lb_h": 588.8,
+      "power_w": 4104,
+      "capacity_power_vs_eer_absolute_difference": 0.0008089668615989254,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td140-Te35",
+      "source_cell": "PDF14/printed13 TableA1 Td=140F Te=35F, M/P rows",
+      "mass_flow_lb_h": 651.4,
+      "power_w": 4168,
+      "capacity_power_vs_eer_absolute_difference": 0.0014203454894436973,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td130-Te-5",
+      "source_cell": "PDF14/printed13 TableA1 Td=130F Te=-5F, M/P rows",
+      "mass_flow_lb_h": 270.3,
+      "power_w": 3388,
+      "capacity_power_vs_eer_absolute_difference": 0.0021133412042502187,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td130-Te0",
+      "source_cell": "PDF14/printed13 TableA1 Td=130F Te=0F, M/P rows",
+      "mass_flow_lb_h": 306.1,
+      "power_w": 3403,
+      "capacity_power_vs_eer_absolute_difference": 0.004710549515133167,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td130-Te5",
+      "source_cell": "PDF14/printed13 TableA1 Td=130F Te=5F, M/P rows",
+      "mass_flow_lb_h": 344.1,
+      "power_w": 3487,
+      "capacity_power_vs_eer_absolute_difference": 0.005179237166618833,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td130-Te10",
+      "source_cell": "PDF14/printed13 TableA1 Td=130F Te=10F, M/P rows",
+      "mass_flow_lb_h": 386.2,
+      "power_w": 3523,
+      "capacity_power_vs_eer_absolute_difference": 0.0011609423786547168,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td130-Te15",
+      "source_cell": "PDF14/printed13 TableA1 Td=130F Te=15F, M/P rows",
+      "mass_flow_lb_h": 431.4,
+      "power_w": 3566,
+      "capacity_power_vs_eer_absolute_difference": 0.0027650028042627284,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td130-Te20",
+      "source_cell": "PDF14/printed13 TableA1 Td=130F Te=20F, M/P rows",
+      "mass_flow_lb_h": 480.9,
+      "power_w": 3617,
+      "capacity_power_vs_eer_absolute_difference": 0.0024633674315737153,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td130-Te25",
+      "source_cell": "PDF14/printed13 TableA1 Td=130F Te=25F, M/P rows",
+      "mass_flow_lb_h": 536.2,
+      "power_w": 3669,
+      "capacity_power_vs_eer_absolute_difference": 0.0021831561733440807,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td130-Te30",
+      "source_cell": "PDF14/printed13 TableA1 Td=130F Te=30F, M/P rows",
+      "mass_flow_lb_h": 595.5,
+      "power_w": 3714,
+      "capacity_power_vs_eer_absolute_difference": 0.0027948303715668033,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td130-Te35",
+      "source_cell": "PDF14/printed13 TableA1 Td=130F Te=35F, M/P rows",
+      "mass_flow_lb_h": 660.0,
+      "power_w": 3765,
+      "capacity_power_vs_eer_absolute_difference": 0.001341301460823452,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td120-Te-10",
+      "source_cell": "PDF14/printed13 TableA1 Td=120F Te=-10F, M/P rows",
+      "mass_flow_lb_h": 242.5,
+      "power_w": 2955,
+      "capacity_power_vs_eer_absolute_difference": 0.0019289340101522612,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td120-Te-5",
+      "source_cell": "PDF14/printed13 TableA1 Td=120F Te=-5F, M/P rows",
+      "mass_flow_lb_h": 274.2,
+      "power_w": 3009,
+      "capacity_power_vs_eer_absolute_difference": 0.0004685942173479063,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td120-Te0",
+      "source_cell": "PDF14/printed13 TableA1 Td=120F Te=0F, M/P rows",
+      "mass_flow_lb_h": 309.2,
+      "power_w": 3063,
+      "capacity_power_vs_eer_absolute_difference": 0.0010284035259546798,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td120-Te5",
+      "source_cell": "PDF14/printed13 TableA1 Td=120F Te=5F, M/P rows",
+      "mass_flow_lb_h": 347.1,
+      "power_w": 3121,
+      "capacity_power_vs_eer_absolute_difference": 0.0032137135533476524,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td120-Te10",
+      "source_cell": "PDF14/printed13 TableA1 Td=120F Te=10F, M/P rows",
+      "mass_flow_lb_h": 388.7,
+      "power_w": 3175,
+      "capacity_power_vs_eer_absolute_difference": 0.0007874015748026153,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td120-Te15",
+      "source_cell": "PDF14/printed13 TableA1 Td=120F Te=15F, M/P rows",
+      "mass_flow_lb_h": 434.6,
+      "power_w": 3229,
+      "capacity_power_vs_eer_absolute_difference": 0.0034716630535776005,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td120-Te20",
+      "source_cell": "PDF14/printed13 TableA1 Td=120F Te=20F, M/P rows",
+      "mass_flow_lb_h": 484.5,
+      "power_w": 3278,
+      "capacity_power_vs_eer_absolute_difference": 0.005045759609517475,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td120-Te25",
+      "source_cell": "PDF14/printed13 TableA1 Td=120F Te=25F, M/P rows",
+      "mass_flow_lb_h": 539.5,
+      "power_w": 3322,
+      "capacity_power_vs_eer_absolute_difference": 0.0004876580373265327,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td120-Te30",
+      "source_cell": "PDF14/printed13 TableA1 Td=120F Te=30F, M/P rows",
+      "mass_flow_lb_h": 600.1,
+      "power_w": 3364,
+      "capacity_power_vs_eer_absolute_difference": 0.002366230677765202,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td120-Te35",
+      "source_cell": "PDF14/printed13 TableA1 Td=120F Te=35F, M/P rows",
+      "mass_flow_lb_h": 666.3,
+      "power_w": 3397,
+      "capacity_power_vs_eer_absolute_difference": 0.0033441271710348275,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td110-Te-10",
+      "source_cell": "PDF14/printed13 TableA1 Td=110F Te=-10F, M/P rows",
+      "mass_flow_lb_h": 247.1,
+      "power_w": 2738,
+      "capacity_power_vs_eer_absolute_difference": 0.004492330168005765,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td110-Te-5",
+      "source_cell": "PDF14/printed13 TableA1 Td=110F Te=-5F, M/P rows",
+      "mass_flow_lb_h": 279.4,
+      "power_w": 2771,
+      "capacity_power_vs_eer_absolute_difference": 0.0022771562612780016,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td110-Te0",
+      "source_cell": "PDF14/printed13 TableA1 Td=110F Te=0F, M/P rows",
+      "mass_flow_lb_h": 314.4,
+      "power_w": 2804,
+      "capacity_power_vs_eer_absolute_difference": 0.0010271041369467326,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td110-Te5",
+      "source_cell": "PDF14/printed13 TableA1 Td=110F Te=5F, M/P rows",
+      "mass_flow_lb_h": 352.7,
+      "power_w": 2846,
+      "capacity_power_vs_eer_absolute_difference": 0.003942375263528142,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td110-Te10",
+      "source_cell": "PDF14/printed13 TableA1 Td=110F Te=10F, M/P rows",
+      "mass_flow_lb_h": 394.3,
+      "power_w": 2892,
+      "capacity_power_vs_eer_absolute_difference": 0.003623789764868768,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td110-Te15",
+      "source_cell": "PDF14/printed13 TableA1 Td=110F Te=15F, M/P rows",
+      "mass_flow_lb_h": 440.7,
+      "power_w": 2938,
+      "capacity_power_vs_eer_absolute_difference": 0.0029543907420013227,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td110-Te20",
+      "source_cell": "PDF14/printed13 TableA1 Td=110F Te=20F, M/P rows",
+      "mass_flow_lb_h": 491.7,
+      "power_w": 2977,
+      "capacity_power_vs_eer_absolute_difference": 0.005777628485052588,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td110-Te25",
+      "source_cell": "PDF14/printed13 TableA1 Td=110F Te=25F, M/P rows",
+      "mass_flow_lb_h": 547.5,
+      "power_w": 3009,
+      "capacity_power_vs_eer_absolute_difference": 0.00013293452974316722,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td110-Te30",
+      "source_cell": "PDF14/printed13 TableA1 Td=110F Te=30F, M/P rows",
+      "mass_flow_lb_h": 608.5,
+      "power_w": 3035,
+      "capacity_power_vs_eer_absolute_difference": 0.0019110378912685633,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td110-Te35",
+      "source_cell": "PDF14/printed13 TableA1 Td=110F Te=35F, M/P rows",
+      "mass_flow_lb_h": 667.8,
+      "power_w": 3059,
+      "capacity_power_vs_eer_absolute_difference": 0.0038803530565534317,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td100-Te-10",
+      "source_cell": "PDF14/printed13 TableA1 Td=100F Te=-10F, M/P rows",
+      "mass_flow_lb_h": 250.9,
+      "power_w": 2469,
+      "capacity_power_vs_eer_absolute_difference": 0.001887403807208976,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td100-Te-5",
+      "source_cell": "PDF14/printed13 TableA1 Td=100F Te=-5F, M/P rows",
+      "mass_flow_lb_h": 282.5,
+      "power_w": 2508,
+      "capacity_power_vs_eer_absolute_difference": 0.004322169059011394,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td100-Te0",
+      "source_cell": "PDF14/printed13 TableA1 Td=100F Te=0F, M/P rows",
+      "mass_flow_lb_h": 317.4,
+      "power_w": 2548,
+      "capacity_power_vs_eer_absolute_difference": 0.0010832025117739619,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td100-Te5",
+      "source_cell": "PDF14/printed13 TableA1 Td=100F Te=5F, M/P rows",
+      "mass_flow_lb_h": 355.7,
+      "power_w": 2591,
+      "capacity_power_vs_eer_absolute_difference": 0.0032342724816674107,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td100-Te10",
+      "source_cell": "PDF14/printed13 TableA1 Td=100F Te=10F, M/P rows",
+      "mass_flow_lb_h": 397.8,
+      "power_w": 2630,
+      "capacity_power_vs_eer_absolute_difference": 0.003193916349809811,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td100-Te15",
+      "source_cell": "PDF14/printed13 TableA1 Td=100F Te=15F, M/P rows",
+      "mass_flow_lb_h": 444.2,
+      "power_w": 2665,
+      "capacity_power_vs_eer_absolute_difference": 0.0003752345215755071,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td100-Te20",
+      "source_cell": "PDF14/printed13 TableA1 Td=100F Te=20F, M/P rows",
+      "mass_flow_lb_h": 495.3,
+      "power_w": 2692,
+      "capacity_power_vs_eer_absolute_difference": 0.005378900445764501,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td100-Te25",
+      "source_cell": "PDF14/printed13 TableA1 Td=100F Te=25F, M/P rows",
+      "mass_flow_lb_h": 551.3,
+      "power_w": 2714,
+      "capacity_power_vs_eer_absolute_difference": 0.0024539425202654286,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td100-Te30",
+      "source_cell": "PDF14/printed13 TableA1 Td=100F Te=30F, M/P rows",
+      "mass_flow_lb_h": 615.4,
+      "power_w": 2734,
+      "capacity_power_vs_eer_absolute_difference": 0.003152889539135728,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td90-Te-10",
+      "source_cell": "PDF14/printed13 TableA1 Td=90F Te=-10F, M/P rows",
+      "mass_flow_lb_h": 252.9,
+      "power_w": 2242,
+      "capacity_power_vs_eer_absolute_difference": 0.004246208742194391,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td90-Te-5",
+      "source_cell": "PDF14/printed13 TableA1 Td=90F Te=-5F, M/P rows",
+      "mass_flow_lb_h": 284.7,
+      "power_w": 2282,
+      "capacity_power_vs_eer_absolute_difference": 0.0020595968448722246,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td90-Te0",
+      "source_cell": "PDF14/printed13 TableA1 Td=90F Te=0F, M/P rows",
+      "mass_flow_lb_h": 319.3,
+      "power_w": 2318,
+      "capacity_power_vs_eer_absolute_difference": 0.0036928386540111546,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td90-Te5",
+      "source_cell": "PDF14/printed13 TableA1 Td=90F Te=5F, M/P rows",
+      "mass_flow_lb_h": 358.8,
+      "power_w": 2353,
+      "capacity_power_vs_eer_absolute_difference": 0.006243093922652321,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td90-Te10",
+      "source_cell": "PDF14/printed13 TableA1 Td=90F Te=10F, M/P rows",
+      "mass_flow_lb_h": 400.4,
+      "power_w": 2383,
+      "capacity_power_vs_eer_absolute_difference": 0.0012337389844727653,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td90-Te15",
+      "source_cell": "PDF14/printed13 TableA1 Td=90F Te=15F, M/P rows",
+      "mass_flow_lb_h": 447.0,
+      "power_w": 2410,
+      "capacity_power_vs_eer_absolute_difference": 0.0024066390041497243,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td90-Te20",
+      "source_cell": "PDF14/printed13 TableA1 Td=90F Te=20F, M/P rows",
+      "mass_flow_lb_h": 498.4,
+      "power_w": 2431,
+      "capacity_power_vs_eer_absolute_difference": 0.0031386260798029753,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td90-Te25",
+      "source_cell": "PDF14/printed13 TableA1 Td=90F Te=25F, M/P rows",
+      "mass_flow_lb_h": 556.0,
+      "power_w": 2441,
+      "capacity_power_vs_eer_absolute_difference": 0.002031954117166279,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td80-Te-10",
+      "source_cell": "PDF14/printed13 TableA1 Td=80F Te=-10F, M/P rows",
+      "mass_flow_lb_h": 254.6,
+      "power_w": 2043,
+      "capacity_power_vs_eer_absolute_difference": 0.0014782183064134813,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td80-Te-5",
+      "source_cell": "PDF14/printed13 TableA1 Td=80F Te=-5F, M/P rows",
+      "mass_flow_lb_h": 286.1,
+      "power_w": 2077,
+      "capacity_power_vs_eer_absolute_difference": 0.002739528165623284,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td80-Te0",
+      "source_cell": "PDF14/printed13 TableA1 Td=80F Te=0F, M/P rows",
+      "mass_flow_lb_h": 321.4,
+      "power_w": 2108,
+      "capacity_power_vs_eer_absolute_difference": 0.002903225806452525,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td80-Te5",
+      "source_cell": "PDF14/printed13 TableA1 Td=80F Te=5F, M/P rows",
+      "mass_flow_lb_h": 359.8,
+      "power_w": 2136,
+      "capacity_power_vs_eer_absolute_difference": 0.002490636704118643,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td80-Te10",
+      "source_cell": "PDF14/printed13 TableA1 Td=80F Te=10F, M/P rows",
+      "mass_flow_lb_h": 402.7,
+      "power_w": 2157,
+      "capacity_power_vs_eer_absolute_difference": 0.00019935095039436135,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td80-Te15",
+      "source_cell": "PDF14/printed13 TableA1 Td=80F Te=15F, M/P rows",
+      "mass_flow_lb_h": 449.1,
+      "power_w": 2174,
+      "capacity_power_vs_eer_absolute_difference": 0.00242870285188701,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td80-Te20",
+      "source_cell": "PDF14/printed13 TableA1 Td=80F Te=20F, M/P rows",
+      "mass_flow_lb_h": 501.2,
+      "power_w": 2180,
+      "capacity_power_vs_eer_absolute_difference": 0.0019266055045878971,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td70-Te-10",
+      "source_cell": "PDF14/printed13 TableA1 Td=70F Te=-10F, M/P rows",
+      "mass_flow_lb_h": 257.1,
+      "power_w": 1856,
+      "capacity_power_vs_eer_absolute_difference": 0.0015086206896555154,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td70-Te-5",
+      "source_cell": "PDF14/printed13 TableA1 Td=70F Te=-5F, M/P rows",
+      "mass_flow_lb_h": 289.1,
+      "power_w": 1881,
+      "capacity_power_vs_eer_absolute_difference": 0.0015045188729398973,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td70-Te0",
+      "source_cell": "PDF14/printed13 TableA1 Td=70F Te=0F, M/P rows",
+      "mass_flow_lb_h": 323.5,
+      "power_w": 1910,
+      "capacity_power_vs_eer_absolute_difference": 0.0026701570680636166,
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A1-Td70-Te5",
+      "source_cell": "PDF14/printed13 TableA1 Td=70F Te=5F, M/P rows",
+      "mass_flow_lb_h": 361.4,
+      "power_w": 1931,
+      "capacity_power_vs_eer_absolute_difference": 0.004013464526151367,
+      "single_phase_gas_check": "passed"
+    }
+  ],
+  "count": 64,
+  "nominal_rpm": 3497.7646302250805,
+  "split_created_before_scoring": true,
+  "blank_cells": "excluded, not filled",
+  "visual_check": "Original PDF6 specs and PDF14 entire A1 table viewed; numbers transcribed, units checked; no OCR"
+}

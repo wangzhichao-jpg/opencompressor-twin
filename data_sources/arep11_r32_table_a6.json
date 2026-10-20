@@ -1,0 +1,364 @@
+{
+  "source_url": "https://info.ornl.gov/sites/publications/files/Pub44928.pdf",
+  "source_title": "AHRI Low-GWP AREP Test Report #11, Compressor Calorimeter Test of R-410A Alternatives R-32, DR-5, and L-41A Using a Scroll Compressor, ORNL",
+  "location": "PDF physical page 18, printed page 17, Table A6; specification on PDF physical page 6, printed page 5",
+  "table": "A6",
+  "refrigerant": "R32",
+  "source_kind": "experiment",
+  "note": "Native PDF text-layer transcription by cell position, checked against rendered page; NOT Appendix B polynomial points; no CC dataset license asserted",
+  "pdf_sha256": "7da8c43e3c3f8ba3905a016f56a6205db2049ed7c5e7403db70fbe4ddbafc291",
+  "suction_dew_temperature_f": [
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55
+  ],
+  "suction_pressure_psia": [
+    78,
+    86,
+    94,
+    103,
+    113,
+    124,
+    135,
+    147,
+    160,
+    174
+  ],
+  "suction_temperature_f": 65,
+  "displacement_in3_rev": 1.24,
+  "rated_displacement_ft3_h": 150.69,
+  "compressor_model": "Copeland ZP21K5E-PFV",
+  "blocks": [
+    {
+      "discharge_dew_temperature_f": 140,
+      "discharge_pressure_psia": 556,
+      "first_suction_column": 7,
+      "capacity_btu_h": [
+        19773,
+        22093,
+        24583
+      ],
+      "power_w": [
+        2547,
+        2529,
+        2517
+      ],
+      "mass_flow_lb_h": [
+        199.6,
+        225.8,
+        254.7
+      ],
+      "eer_btu_wh": [
+        7.76,
+        8.74,
+        9.77
+      ]
+    },
+    {
+      "discharge_dew_temperature_f": 130,
+      "discharge_pressure_psia": 504,
+      "first_suction_column": 6,
+      "capacity_btu_h": [
+        19253,
+        21555,
+        24016,
+        26700
+      ],
+      "power_w": [
+        2242,
+        2222,
+        2203,
+        2185
+      ],
+      "mass_flow_lb_h": [
+        182.7,
+        206.7,
+        233.0,
+        262.6
+      ],
+      "eer_btu_wh": [
+        8.59,
+        9.7,
+        10.9,
+        12.22
+      ]
+    },
+    {
+      "discharge_dew_temperature_f": 120,
+      "discharge_pressure_psia": 444,
+      "first_suction_column": 4,
+      "capacity_btu_h": [
+        16811,
+        18805,
+        20996,
+        23360,
+        25905,
+        28653
+      ],
+      "power_w": [
+        1972,
+        1960,
+        1946,
+        1935,
+        1923,
+        1904
+      ],
+      "mass_flow_lb_h": [
+        149.8,
+        168.8,
+        190.3,
+        213.8,
+        239.7,
+        268.4
+      ],
+      "eer_btu_wh": [
+        8.52,
+        9.59,
+        10.79,
+        12.07,
+        13.47,
+        15.05
+      ]
+    },
+    {
+      "discharge_dew_temperature_f": 110,
+      "discharge_pressure_psia": 389,
+      "first_suction_column": 2,
+      "capacity_btu_h": [
+        14261,
+        16137,
+        17980,
+        20092,
+        22411,
+        24901,
+        27585,
+        30485
+      ],
+      "power_w": [
+        1744,
+        1736,
+        1732,
+        1722,
+        1712,
+        1700,
+        1682,
+        1660
+      ],
+      "mass_flow_lb_h": [
+        120.2,
+        136.8,
+        153.5,
+        172.9,
+        194.5,
+        218.2,
+        244.2,
+        273.1
+      ],
+      "eer_btu_wh": [
+        8.18,
+        9.3,
+        10.38,
+        11.67,
+        13.09,
+        14.65,
+        16.4,
+        18.36
+      ]
+    },
+    {
+      "discharge_dew_temperature_f": 100,
+      "discharge_pressure_psia": 340,
+      "first_suction_column": 1,
+      "capacity_btu_h": [
+        13514,
+        15293,
+        17276,
+        19329,
+        21547,
+        23897,
+        26459,
+        29277,
+        32330
+      ],
+      "power_w": [
+        1534,
+        1529,
+        1521,
+        1513,
+        1503,
+        1492,
+        1477,
+        1460,
+        1445
+      ],
+      "mass_flow_lb_h": [
+        109.0,
+        123.9,
+        140.9,
+        158.7,
+        178.2,
+        199.3,
+        222.7,
+        248.8,
+        278.0
+      ],
+      "eer_btu_wh": [
+        8.81,
+        10.0,
+        11.36,
+        12.77,
+        14.33,
+        16.02,
+        17.91,
+        20.05,
+        22.38
+      ]
+    },
+    {
+      "discharge_dew_temperature_f": 90,
+      "discharge_pressure_psia": 296,
+      "first_suction_column": 0,
+      "capacity_btu_h": [
+        12679,
+        14279,
+        16177,
+        18212,
+        20339,
+        22623,
+        25111,
+        27832,
+        30794,
+        33992
+      ],
+      "power_w": [
+        1355,
+        1351,
+        1344,
+        1337,
+        1331,
+        1321,
+        1306,
+        1290,
+        1274,
+        1256
+      ],
+      "mass_flow_lb_h": [
+        98.1,
+        111.0,
+        126.5,
+        143.1,
+        161.0,
+        180.3,
+        201.6,
+        225.5,
+        252.0,
+        281.1
+      ],
+      "eer_btu_wh": [
+        9.36,
+        10.57,
+        12.03,
+        13.62,
+        15.28,
+        17.12,
+        19.23,
+        21.58,
+        24.18,
+        27.06
+      ]
+    },
+    {
+      "discharge_dew_temperature_f": 80,
+      "discharge_pressure_psia": 256,
+      "first_suction_column": 0,
+      "capacity_btu_h": [
+        13646,
+        15432,
+        17316,
+        19323,
+        21508,
+        23918,
+        26496,
+        29303,
+        32388
+      ],
+      "power_w": [
+        1191,
+        1187,
+        1182,
+        1174,
+        1162,
+        1148,
+        1135,
+        1118,
+        1105
+      ],
+      "mass_flow_lb_h": [
+        102.1,
+        115.9,
+        130.7,
+        146.8,
+        164.3,
+        184.0,
+        205.4,
+        229.1,
+        255.6
+      ],
+      "eer_btu_wh": [
+        11.46,
+        13.0,
+        14.65,
+        16.46,
+        18.51,
+        20.83,
+        23.35,
+        26.22,
+        29.3
+      ]
+    },
+    {
+      "discharge_dew_temperature_f": 70,
+      "discharge_pressure_psia": 220,
+      "first_suction_column": 0,
+      "capacity_btu_h": [
+        14403,
+        16126,
+        18099,
+        20149,
+        22489,
+        24934
+      ],
+      "power_w": [
+        1052,
+        1047,
+        1039,
+        1029,
+        1020,
+        1005
+      ],
+      "mass_flow_lb_h": [
+        104.3,
+        117.3,
+        132.3,
+        148.1,
+        166.3,
+        185.6
+      ],
+      "eer_btu_wh": [
+        13.69,
+        15.4,
+        17.42,
+        19.58,
+        22.06,
+        24.82
+      ]
+    }
+  ]
+}

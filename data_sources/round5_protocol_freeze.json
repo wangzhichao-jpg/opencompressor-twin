@@ -1,0 +1,28 @@
+{
+  "frozen_at_utc": "2026-10-20T00:38:22.693033+00:00",
+  "candidate_pdf_downloaded": false,
+  "protocol_files": {
+    "docs/第五轮外部检验协议.md": "38fc09f644cfef90c583f91c9b92ea11b1d20a67c0813e2abb919df4a81224bf",
+    "data_sources/round5_external_protocol.json": "4b257fd5510e37211e0eaec40c1ee16f1aa2e4051bf5f890af36e831fb332032"
+  },
+  "evaluation_code_sha256": {
+    "src/octwin/__init__.py": "ee491a86fc9fe6d62fc9ff2a8c8b7bad4f46c7fedc21642ff2c40645622fd92e",
+    "src/octwin/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/octwin/api.py": "d504087c0f5cd3339495cf2c0c88a8ecef77af483cb5be0097906a525c6f9dd7",
+    "src/octwin/baselines.py": "fbc3354938b56a95ccfebcdce09471bc506625477e7c11a32779df185ef35a15",
+    "src/octwin/calibration.py": "db4c5c04cfeac740a74c52ca05385ecd62cc51fe35529a02c7467c7694ff26ed",
+    "src/octwin/cli.py": "ce742043fa0a304eaa336e2643fb99853e2f86a0ecaf033053026f1a128ae380",
+    "src/octwin/core.py": "bc7b16c81eb49988d45702fc57d448bad0152e2f27f7936e45218dffb27d86ea",
+    "src/octwin/demo.py": "e0d501d4b32a2839f31fca62f7c7fc5b9099e73a7bfe936149d2617ee369ad96",
+    "src/octwin/design.py": "a23f17d9916129215c431d1ef6604ea589b34d638cc9f3747c47cf3815d52716",
+    "src/octwin/development.py": "395765428918af6714d22abdc09d6b6cba7ebf8a674de0f9f63dbed25ff80a4c",
+    "src/octwin/discrepancy.py": "8da33f87ef8c8f959aed30971acc9174f1bd689ea5b8a8ed64070b7cb32ad9f3",
+    "src/octwin/evaluation.py": "a8599127b0dd0f6a3e04ac7ec4970fe68a4bef63422322dbb98f37bdc54aa4b9",
+    "src/octwin/kernels.py": "bb0d155443fb546e01246609537a9e6b9ea6cd59afbc6d718ca5416985f42927",
+    "src/octwin/models.py": "7d2edb720eacf48fa2defa22aa1c7bea4530735d2a0f128d59782038a283e09d",
+    "src/octwin/properties.py": "99837b872a7c8fa2f7305aaf53902c5eea22d924f799474011979127cd816efd",
+    "src/octwin/replay.py": "2f730938b45e5423382a308b292f8b31be47988808f23af9d5da17c0050fa448",
+    "src/octwin/reporting.py": "1fd744a0efff75c4ab1eeb68c3f5868fe49d9b1f5a4db9a6446fd4bb0cec8bbf",
+    "src/octwin/workflow.py": "73a2f86c43b7974ce07c08a1db3d46a2a63d7db75d8cb9c3948d9c4aef84f167"
+  }
+}

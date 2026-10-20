@@ -1,0 +1,981 @@
+{
+  "dataset_id": "arep21-copeland-zs21kae-r404a-65f-v1",
+  "compressor": {
+    "compressor_type": "scroll",
+    "manufacturer": "Copeland",
+    "model_id": "ZS21KAE-PFV",
+    "refrigerant": "R404A",
+    "displacement_m3_rev": 5.0963769039999996e-05
+  },
+  "evidence_label": "EXPERIMENTAL DATA COMPARISON - see source review and declared scope limitations",
+  "source_kind": "experiment",
+  "validation_role": "public_validation",
+  "dataset_fingerprint": "41529b70e29869c679e82a6cbb448750669986122533b9081b871a442ca3af2e",
+  "source": "AHRI Low-GWP AREP Test Report #21, Shrestha, Sharma and Abdelaziz, ORNL, August 5 2013; Appendix A Table A1, mass-flow/electrical-power test results; not Appendix B fitted coefficients",
+  "license": "Public ORNL/DOE technical report; no explicit dataset CC license stated. Numerical transcription with attribution; original report link-only.",
+  "power_boundary": "electrical_input",
+  "environment": {
+    "octwin": "0.1.0.dev2",
+    "python": "3.14.3",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "CoolProp": "8.0.0"
+  },
+  "split": {
+    "train": [
+      "A1-Td140-Te5",
+      "A1-Td140-Te35",
+      "A1-Td130-Te-5",
+      "A1-Td120-Te-10",
+      "A1-Td110-Te35",
+      "A1-Td100-Te30",
+      "A1-Td80-Te20",
+      "A1-Td70-Te-10",
+      "A1-Td70-Te5",
+      "A1-Td130-Te0",
+      "A1-Td110-Te30",
+      "A1-Td130-Te35",
+      "A1-Td120-Te30",
+      "A1-Td140-Te25",
+      "A1-Td110-Te-5",
+      "A1-Td90-Te15",
+      "A1-Td120-Te20",
+      "A1-Td110-Te5",
+      "A1-Td100-Te10",
+      "A1-Td130-Te25",
+      "A1-Td110-Te0",
+      "A1-Td80-Te5",
+      "A1-Td90-Te-5",
+      "A1-Td100-Te25",
+      "A1-Td140-Te30",
+      "A1-Td110-Te10",
+      "A1-Td120-Te25",
+      "A1-Td120-Te10",
+      "A1-Td140-Te15",
+      "A1-Td100-Te-10",
+      "A1-Td110-Te15",
+      "A1-Td80-Te0",
+      "A1-Td110-Te25",
+      "A1-Td90-Te25",
+      "A1-Td100-Te0",
+      "A1-Td140-Te20",
+      "A1-Td130-Te5",
+      "A1-Td100-Te-5",
+      "A1-Td110-Te20",
+      "A1-Td110-Te-10"
+    ],
+    "calibration": [
+      "A1-Td130-Te15",
+      "A1-Td90-Te10",
+      "A1-Td120-Te0",
+      "A1-Td120-Te35",
+      "A1-Td100-Te5",
+      "A1-Td120-Te-5",
+      "A1-Td130-Te10",
+      "A1-Td80-Te15",
+      "A1-Td90-Te5",
+      "A1-Td70-Te-5",
+      "A1-Td80-Te-10",
+      "A1-Td100-Te20"
+    ],
+    "test": [
+      "A1-Td90-Te20",
+      "A1-Td120-Te5",
+      "A1-Td130-Te20",
+      "A1-Td130-Te30",
+      "A1-Td140-Te10",
+      "A1-Td120-Te15",
+      "A1-Td90-Te-10",
+      "A1-Td80-Te-5",
+      "A1-Td70-Te0",
+      "A1-Td90-Te0",
+      "A1-Td80-Te10",
+      "A1-Td100-Te15"
+    ],
+    "seed": 42,
+    "method": "input-only convex-hull vertices observed + seeded interior group holdout; fixed65F/nominal-equivalent-speed interpolation ONLY",
+    "mandatory_hull_training_groups": [
+      "A1-Td140-Te5",
+      "A1-Td140-Te35",
+      "A1-Td130-Te-5",
+      "A1-Td120-Te-10",
+      "A1-Td110-Te35",
+      "A1-Td100-Te30",
+      "A1-Td80-Te20",
+      "A1-Td70-Te-10",
+      "A1-Td70-Te5"
+    ],
+    "status": "retrospective published-experiment holdout, not prospective enterprise blind test"
+  },
+  "split_sha256": "a1669ac18d585f5fc0cadd75d78e44356f95e2eb693fdea2e04d0769de9f77af",
+  "group_counts": {
+    "train": 40,
+    "calibration": 12,
+    "test": 12
+  },
+  "metrics": {
+    "total": 12,
+    "predicted": 12,
+    "refused_or_failed": 0,
+    "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+    "mass_flow_kg_s": {
+      "mare_percent": 0.6238822457946371,
+      "p95_are_percent": 1.2324590144461713,
+      "max_are_percent": 1.4775751622061017,
+      "interval_coverage": 0.9166666666666666,
+      "interval_mean_relative_width": 0.02496587432137787,
+      "interval_points": 12
+    },
+    "power_w": {
+      "mare_percent": 1.7083213595296154,
+      "p95_are_percent": 4.385150189652111,
+      "max_are_percent": 4.9780906155175835,
+      "interval_coverage": 1.0,
+      "interval_mean_relative_width": 0.11326500655644085,
+      "interval_points": 12
+    }
+  },
+  "training_fit_only_NOT_validation": {
+    "total": 40,
+    "predicted": 40,
+    "refused_or_failed": 0,
+    "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+    "mass_flow_kg_s": {
+      "mare_percent": 0.710198418942746,
+      "p95_are_percent": 1.4456823014035756,
+      "max_are_percent": 1.9082520621637844,
+      "interval_coverage": 0.85,
+      "interval_mean_relative_width": 0.02496587432137784,
+      "interval_points": 40
+    },
+    "power_w": {
+      "mare_percent": 1.4508339317281924,
+      "p95_are_percent": 3.2249269018689275,
+      "max_are_percent": 5.946345210517068,
+      "interval_coverage": 0.975,
+      "interval_mean_relative_width": 0.11326500655644094,
+      "interval_points": 40
+    }
+  },
+  "stratified_metrics": {
+    "suction_pressure_pa": {
+      "binning": "three equal-width bins from training inputs only",
+      "slices": [
+        {
+          "low_pa": 262000.777140384,
+          "high_pa": 383808.155986352,
+          "point_ids": [
+            "A1-Td120-Te5",
+            "A1-Td90-Te-10",
+            "A1-Td90-Te0",
+            "A1-Td80-Te-5",
+            "A1-Td70-Te0"
+          ],
+          "metrics": {
+            "total": 5,
+            "predicted": 5,
+            "refused_or_failed": 0,
+            "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+            "mass_flow_kg_s": {
+              "mare_percent": 0.5027816795689399,
+              "p95_are_percent": 0.9643279428093066,
+              "max_are_percent": 1.031909439006229,
+              "interval_coverage": 1.0,
+              "interval_mean_relative_width": 0.024965874321377875,
+              "interval_points": 5
+            },
+            "power_w": {
+              "mare_percent": 2.807104832539671,
+              "p95_are_percent": 4.762475915202867,
+              "max_are_percent": 4.9780906155175835,
+              "interval_coverage": 1.0,
+              "interval_mean_relative_width": 0.11326500655644085,
+              "interval_points": 5
+            }
+          }
+        },
+        {
+          "low_pa": 383808.155986352,
+          "high_pa": 505615.53483232,
+          "point_ids": [
+            "A1-Td140-Te10",
+            "A1-Td130-Te20",
+            "A1-Td120-Te15",
+            "A1-Td100-Te15",
+            "A1-Td90-Te20",
+            "A1-Td80-Te10"
+          ],
+          "metrics": {
+            "total": 6,
+            "predicted": 6,
+            "refused_or_failed": 0,
+            "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+            "mass_flow_kg_s": {
+              "mare_percent": 0.5825172315808073,
+              "p95_are_percent": 0.936147108630711,
+              "max_are_percent": 0.9720283143156205,
+              "interval_coverage": 1.0,
+              "interval_mean_relative_width": 0.024965874321377864,
+              "interval_points": 6
+            },
+            "power_w": {
+              "mare_percent": 0.782198977227185,
+              "p95_are_percent": 1.861729461610087,
+              "max_are_percent": 2.214434691495326,
+              "interval_coverage": 1.0,
+              "interval_mean_relative_width": 0.11326500655644085,
+              "interval_points": 6
+            }
+          }
+        },
+        {
+          "low_pa": 505615.53483232,
+          "high_pa": 627422.913678288,
+          "point_ids": [
+            "A1-Td130-Te30"
+          ],
+          "metrics": {
+            "total": 1,
+            "predicted": 1,
+            "refused_or_failed": 0,
+            "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+            "mass_flow_kg_s": {
+              "mare_percent": 1.4775751622061017,
+              "p95_are_percent": 1.4775751622061017,
+              "max_are_percent": 1.4775751622061017,
+              "interval_coverage": 0.0,
+              "interval_mean_relative_width": 0.02496587432137794,
+              "interval_points": 1
+            },
+            "power_w": {
+              "mare_percent": 1.7711382882939164,
+              "p95_are_percent": 1.7711382882939164,
+              "max_are_percent": 1.7711382882939164,
+              "interval_coverage": 1.0,
+              "interval_mean_relative_width": 0.11326500655644098,
+              "interval_points": 1
+            }
+          }
+        }
+      ],
+      "outside_training_range": 0
+    },
+    "discharge_pressure_pa": {
+      "binning": "three equal-width bins from training inputs only",
+      "slices": [
+        {
+          "low_pa": 1116950.681493216,
+          "high_pa": 1700706.7989814398,
+          "point_ids": [
+            "A1-Td90-Te-10",
+            "A1-Td90-Te0",
+            "A1-Td90-Te20",
+            "A1-Td80-Te-5",
+            "A1-Td80-Te10",
+            "A1-Td70-Te0"
+          ],
+          "metrics": {
+            "total": 6,
+            "predicted": 6,
+            "refused_or_failed": 0,
+            "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+            "mass_flow_kg_s": {
+              "mare_percent": 0.6425202672262506,
+              "p95_are_percent": 1.0169391578335767,
+              "max_are_percent": 1.031909439006229,
+              "interval_coverage": 1.0,
+              "interval_mean_relative_width": 0.02496587432137785,
+              "interval_points": 6
+            },
+            "power_w": {
+              "mare_percent": 2.6417228907465025,
+              "p95_are_percent": 4.708572240124187,
+              "max_are_percent": 4.9780906155175835,
+              "interval_coverage": 1.0,
+              "interval_mean_relative_width": 0.1132650065564409,
+              "interval_points": 6
+            }
+          }
+        },
+        {
+          "low_pa": 1700706.7989814398,
+          "high_pa": 2284462.916469664,
+          "point_ids": [
+            "A1-Td120-Te5",
+            "A1-Td120-Te15",
+            "A1-Td100-Te15"
+          ],
+          "metrics": {
+            "total": 3,
+            "predicted": 3,
+            "refused_or_failed": 0,
+            "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+            "mass_flow_kg_s": {
+              "mare_percent": 0.4119001792593613,
+              "p95_are_percent": 0.697605138129197,
+              "max_are_percent": 0.7240814201014634,
+              "interval_coverage": 1.0,
+              "interval_mean_relative_width": 0.024965874321377868,
+              "interval_points": 3
+            },
+            "power_w": {
+              "mare_percent": 0.6134240070206095,
+              "p95_are_percent": 0.7796918699490485,
+              "max_are_percent": 0.8036137719543701,
+              "interval_coverage": 1.0,
+              "interval_mean_relative_width": 0.11326500655644078,
+              "interval_points": 3
+            }
+          }
+        },
+        {
+          "low_pa": 2284462.916469664,
+          "high_pa": 2868219.033957888,
+          "point_ids": [
+            "A1-Td140-Te10",
+            "A1-Td130-Te20",
+            "A1-Td130-Te30"
+          ],
+          "metrics": {
+            "total": 3,
+            "predicted": 3,
+            "refused_or_failed": 0,
+            "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+            "mass_flow_kg_s": {
+              "mare_percent": 0.798588269466686,
+              "p95_are_percent": 1.3842288553266613,
+              "max_are_percent": 1.4775751622061017,
+              "interval_coverage": 0.6666666666666666,
+              "interval_mean_relative_width": 0.024965874321377927,
+              "interval_points": 3
+            },
+            "power_w": {
+              "mare_percent": 0.9364156496048456,
+              "p95_are_percent": 1.6496855751923256,
+              "max_are_percent": 1.7711382882939164,
+              "interval_coverage": 1.0,
+              "interval_mean_relative_width": 0.1132650065564409,
+              "interval_points": 3
+            }
+          }
+        }
+      ],
+      "outside_training_range": 0
+    }
+  },
+  "source_review": {
+    "speed_definition": "nominal_mechanical_rpm",
+    "nominal_speed_provenance": {
+      "source_location": "AREP21 PDF6/printed5 sec2b, 3.11in3/rev and377.71ft3/hr",
+      "volume_rate_m3_s": 0.0029709878128512,
+      "definition": "60 * rated_volume_rate_m3_s / displacement_m3_rev; NOT frequency conversion, NOT measured per-point speed"
+    },
+    "admission_status": "reviewed_published_experiment_with_nominal_speed_limitation",
+    "source_location": "PDF physical page 14, printed page 13, Table A1; specification on PDF physical page 6, printed page 5",
+    "known_limitations": [
+      "Speed is nominal-equivalent from published rated displacement rate, not per-point shaft measurement; no cross-speed or absolute volumetric-efficiency validation",
+      "Published header pressures rounded to whole psia; used as-is, not silently replaced with simulated pressures",
+      "Source used REFPROP9.0, current model CoolProp8.0.0; property/pressure-rounding differences remain",
+      "Only R404A TableA1 fixed65F slice; no pooling of alternate fluids, other superheat regimes or manufacturer-map points",
+      "Source capacities normalized to zero subcooling; retained for extraction audit only, not used as independent supervision or claimed predicted cooling capacity",
+      "Original hermetic compressor contains POE oil; oil circulation/correction not reported; no oil-mixture model or oil-free claim",
+      "Input hull vertices intentionally observed; evaluation tests interior interpolation, not boundary or cross-speed generalization",
+      "Single public report/single machine; held-out conditions share laboratory/instrument calibration and do not prove cross-brand transfer"
+    ]
+  },
+  "baseline": {
+    "status": "available",
+    "family": "training-only affine input surface",
+    "rank": 3,
+    "metrics": {
+      "total": 12,
+      "predicted": 12,
+      "refused_or_failed": 0,
+      "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+      "mass_flow_kg_s": {
+        "mare_percent": 0.6058854070242526,
+        "p95_are_percent": 1.2201698568435766,
+        "max_are_percent": 1.5004839703162576
+      },
+      "power_w": {
+        "mare_percent": 0.8330387018750384,
+        "p95_are_percent": 2.178642975903922,
+        "max_are_percent": 2.245572451137523
+      }
+    },
+    "predictions": [
+      {
+        "point_id": "A1-Td140-Te10",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.04791415650768073,
+        "power_w": 3889.1871944228747
+      },
+      {
+        "point_id": "A1-Td130-Te20",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.06056138608240465,
+        "power_w": 3602.0806204955516
+      },
+      {
+        "point_id": "A1-Td130-Te30",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.07555468472138173,
+        "power_w": 3704.6939554358614
+      },
+      {
+        "point_id": "A1-Td120-Te5",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.044167189066477666,
+        "power_w": 3147.3547025069274
+      },
+      {
+        "point_id": "A1-Td120-Te15",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.055162274735060864,
+        "power_w": 3222.604481463155
+      },
+      {
+        "point_id": "A1-Td100-Te15",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.05618194764684562,
+        "power_w": 2645.733791026326
+      },
+      {
+        "point_id": "A1-Td90-Te-10",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.031628177024245314,
+        "power_w": 2228.580071539429
+      },
+      {
+        "point_id": "A1-Td90-Te0",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.04062415620763156,
+        "power_w": 2290.148072503615
+      },
+      {
+        "point_id": "A1-Td90-Te20",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.06261432754479795,
+        "power_w": 2440.647630416069
+      },
+      {
+        "point_id": "A1-Td80-Te-5",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.036020663520529295,
+        "power_w": 2032.8869605546045
+      },
+      {
+        "point_id": "A1-Td80-Te10",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.05101396215950639,
+        "power_w": 2135.500295494914
+      },
+      {
+        "point_id": "A1-Td70-Te0",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.04137191634294038,
+        "power_w": 1867.1095661832733
+      }
+    ]
+  },
+  "ahri10_baseline": {
+    "status": "available",
+    "family": "AHRI540-style full bivariate cubic (10 coefficients per response)",
+    "version": 1,
+    "property_version": "8.0.0",
+    "center_k": [
+      261.98264052516186,
+      316.997999895561
+    ],
+    "scale_k": [
+      24.944944126314226,
+      38.87184077025057
+    ],
+    "coefficients": {
+      "mass_flow_kg_s": [
+        0.05245989144136273,
+        0.05234399080082168,
+        -0.0035456730334299733,
+        0.020186310488424786,
+        -0.0017623867634226102,
+        -0.002066769535249091,
+        0.0020663683058078103,
+        -0.004452013120110914,
+        0.0013230620294223268,
+        0.0006797384400292423
+      ],
+      "power_w": [
+        2943.041189143483,
+        366.54613668123113,
+        2000.8780754238333,
+        -111.90055442232676,
+        412.6941287805365,
+        704.2284304498951,
+        -60.64238397872438,
+        276.56173740098825,
+        -217.7076065511199,
+        349.7136107315382
+      ]
+    },
+    "fixed_suction_temperature_k": 291.4833333333333,
+    "fixed_speed_rpm": 3497.7646302250805,
+    "diagnostics": {
+      "rank": 10,
+      "condition_number": 126.47153447747185,
+      "training_groups": 40
+    },
+    "weighting": "relative residual least squares; equal group weight, no measurement-uncertainty interpretation",
+    "training_point_ids": [
+      "A1-Td140-Te5",
+      "A1-Td140-Te15",
+      "A1-Td140-Te20",
+      "A1-Td140-Te25",
+      "A1-Td140-Te30",
+      "A1-Td140-Te35",
+      "A1-Td130-Te-5",
+      "A1-Td130-Te0",
+      "A1-Td130-Te5",
+      "A1-Td130-Te25",
+      "A1-Td130-Te35",
+      "A1-Td120-Te-10",
+      "A1-Td120-Te10",
+      "A1-Td120-Te20",
+      "A1-Td120-Te25",
+      "A1-Td120-Te30",
+      "A1-Td110-Te-10",
+      "A1-Td110-Te-5",
+      "A1-Td110-Te0",
+      "A1-Td110-Te5",
+      "A1-Td110-Te10",
+      "A1-Td110-Te15",
+      "A1-Td110-Te20",
+      "A1-Td110-Te25",
+      "A1-Td110-Te30",
+      "A1-Td110-Te35",
+      "A1-Td100-Te-10",
+      "A1-Td100-Te-5",
+      "A1-Td100-Te0",
+      "A1-Td100-Te10",
+      "A1-Td100-Te25",
+      "A1-Td100-Te30",
+      "A1-Td90-Te-5",
+      "A1-Td90-Te15",
+      "A1-Td90-Te25",
+      "A1-Td80-Te0",
+      "A1-Td80-Te5",
+      "A1-Td80-Te20",
+      "A1-Td70-Te-10",
+      "A1-Td70-Te5"
+    ],
+    "limitation": "Point baseline only, intervals not calibrated; original published map coefficients never used",
+    "metrics": {
+      "total": 12,
+      "predicted": 12,
+      "refused_or_failed": 0,
+      "note": "Error/interval statistics conditional on predicted points; failures retained in denominator above",
+      "mass_flow_kg_s": {
+        "mare_percent": 0.40750996511795073,
+        "p95_are_percent": 0.6921303254247045,
+        "max_are_percent": 0.7680361750907139
+      },
+      "power_w": {
+        "mare_percent": 0.15776717458828673,
+        "p95_are_percent": 0.4215065207181842,
+        "max_are_percent": 0.6570940886169385
+      }
+    },
+    "predictions": [
+      {
+        "point_id": "A1-Td140-Te10",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.04772416841960794,
+        "power_w": 3888.5835920243558
+      },
+      {
+        "point_id": "A1-Td130-Te20",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.06036552408112301,
+        "power_w": 3620.1189054750744
+      },
+      {
+        "point_id": "A1-Td130-Te30",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.07550445698202597,
+        "power_w": 3722.190223965606
+      },
+      {
+        "point_id": "A1-Td120-Te5",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.04406975623973604,
+        "power_w": 3141.507906505735
+      },
+      {
+        "point_id": "A1-Td120-Te15",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.05498815552346419,
+        "power_w": 3233.5144584176032
+      },
+      {
+        "point_id": "A1-Td100-Te15",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.05601063050499091,
+        "power_w": 2659.815569147636
+      },
+      {
+        "point_id": "A1-Td90-Te-10",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.03206520149681652,
+        "power_w": 2245.816724155861
+      },
+      {
+        "point_id": "A1-Td90-Te0",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.04045543965658774,
+        "power_w": 2323.3024958397896
+      },
+      {
+        "point_id": "A1-Td90-Te20",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.06256263313150294,
+        "power_w": 2428.2640012757724
+      },
+      {
+        "point_id": "A1-Td80-Te-5",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.035914591526081924,
+        "power_w": 2077.2271092306864
+      },
+      {
+        "point_id": "A1-Td80-Te10",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.05052814809726729,
+        "power_w": 2155.9536242377053
+      },
+      {
+        "point_id": "A1-Td70-Te0",
+        "status": "in_training_hull",
+        "mass_flow_kg_s": 0.04069385983342075,
+        "power_w": 1909.7455280957897
+      }
+    ]
+  },
+  "interval": {
+    "status": "available",
+    "method": "group-max split conformal, relative-to-prediction residual",
+    "groups": 12,
+    "nominal_coverage": 0.9,
+    "relative_radius": {
+      "mass_flow_kg_s": 0.012482937160688934,
+      "power_w": 0.05663250327822045
+    },
+    "calibration_group_ids": [
+      "A1-Td100-Te20",
+      "A1-Td100-Te5",
+      "A1-Td120-Te-5",
+      "A1-Td120-Te0",
+      "A1-Td120-Te35",
+      "A1-Td130-Te10",
+      "A1-Td130-Te15",
+      "A1-Td70-Te-5",
+      "A1-Td80-Te-10",
+      "A1-Td80-Te15",
+      "A1-Td90-Te10",
+      "A1-Td90-Te5"
+    ],
+    "limitation": "Coverage assumes exchangeable independent groups; not guaranteed on regional/shifted data; not measurement uncertainty"
+  },
+  "diagnostics": {
+    "rank": 4,
+    "condition_number": 38.09326305940829,
+    "singular_values": [
+      16.72738539261818,
+      6.954187773358429,
+      1.4125988514420529,
+      0.4391166324221428
+    ],
+    "warning": [
+      "Local rank does not prove global uniqueness; no physical gap inference"
+    ],
+    "relative_residual_sum_squares": 0.017536480289100438,
+    "weighting": "relative residuals, equal total weight per repeat group; not metrological uncertainty",
+    "successful_starts": 3,
+    "multi_start_parameter_spread": [
+      2.1874336786353865e-08,
+      1.3644354590613972e-08,
+      2.4855939528833915e-09,
+      3.313289975714895e-09
+    ]
+  },
+  "test_predictions": [
+    {
+      "point_id": "A1-Td140-Te10",
+      "suction_pressure_pa": 393001.165710576,
+      "discharge_pressure_pa": 2868219.033957888,
+      "suction_temperature_k": 291.4833333333333,
+      "speed_rpm": 3497.7646302250805,
+      "status": "in_training_hull",
+      "nearest_distance": 0.09433962264150941,
+      "warning": "Convex hull coverage does not establish model validity or a safe operating envelope",
+      "mass_flow_kg_s": 0.04803836433900941,
+      "power_w": 3870.274562098895,
+      "eta_v": 0.9464056879863512,
+      "eta_is": 0.5838599037375538,
+      "mass_flow_kg_s_lower": 0.047438704455663276,
+      "mass_flow_kg_s_upper": 0.048638024222355546,
+      "power_w_lower": 3651.091225273216,
+      "power_w_upper": 4089.457898924574,
+      "group_id": "A1-Td140-Te10",
+      "mass_flow_kg_s_observed": 0.04777839630666667,
+      "power_w_observed": 3889.0
+    },
+    {
+      "point_id": "A1-Td130-Te20",
+      "suction_pressure_pa": 475738.253228592,
+      "discharge_pressure_pa": 2537270.683885824,
+      "suction_temperature_k": 291.4833333333333,
+      "speed_rpm": 3497.7646302250805,
+      "status": "in_training_hull",
+      "nearest_distance": 0.13207547169811307,
+      "warning": "Convex hull coverage does not establish model validity or a safe operating envelope",
+      "mass_flow_kg_s": 0.060365718264050267,
+      "power_w": 3637.1326255587455,
+      "eta_v": 0.9647595195450718,
+      "eta_is": 0.6380205014850843,
+      "mass_flow_kg_s_lower": 0.05961217679630027,
+      "mass_flow_kg_s_upper": 0.06111925973180026,
+      "power_w_lower": 3431.1527002184675,
+      "power_w_upper": 3843.1125508990235,
+      "group_id": "A1-Td130-Te20",
+      "mass_flow_kg_s_observed": 0.06059238075916667,
+      "power_w_observed": 3617.0
+    },
+    {
+      "point_id": "A1-Td130-Te30",
+      "suction_pressure_pa": 579159.612626112,
+      "discharge_pressure_pa": 2537270.683885824,
+      "suction_temperature_k": 291.4833333333333,
+      "speed_rpm": 3497.7646302250805,
+      "status": "in_training_hull",
+      "nearest_distance": 0.1320754716981133,
+      "warning": "Convex hull coverage does not establish model validity or a safe operating envelope",
+      "mass_flow_kg_s": 0.07614038819338435,
+      "power_w": 3779.7800760272357,
+      "eta_v": 0.9758644786044945,
+      "eta_is": 0.6585057928420164,
+      "mass_flow_kg_s_lower": 0.07518993251217587,
+      "mass_flow_kg_s_upper": 0.07709084387459283,
+      "power_w_lower": 3565.721668480671,
+      "power_w_upper": 3993.8384835738007,
+      "group_id": "A1-Td130-Te30",
+      "mass_flow_kg_s_observed": 0.07503173787083334,
+      "power_w_observed": 3714.0
+    },
+    {
+      "point_id": "A1-Td120-Te5",
+      "suction_pressure_pa": 358527.379244736,
+      "discharge_pressure_pa": 2233901.362986432,
+      "suction_temperature_k": 291.4833333333333,
+      "speed_rpm": 3497.7646302250805,
+      "status": "in_training_hull",
+      "nearest_distance": 0.09433962264150941,
+      "warning": "Convex hull coverage does not establish model validity or a safe operating envelope",
+      "mass_flow_kg_s": 0.04393474211441521,
+      "power_w": 3138.614760206835,
+      "eta_v": 0.9557579827414915,
+      "eta_is": 0.614731153559533,
+      "mass_flow_kg_s_lower": 0.04338630748942989,
+      "mass_flow_kg_s_upper": 0.04448317673940053,
+      "power_w_lower": 2960.8671495103504,
+      "power_w_upper": 3316.3623709033195,
+      "group_id": "A1-Td120-Te5",
+      "mass_flow_kg_s_observed": 0.04373386434083334,
+      "power_w_observed": 3121.0
+    },
+    {
+      "point_id": "A1-Td120-Te15",
+      "suction_pressure_pa": 434369.709469584,
+      "discharge_pressure_pa": 2233901.362986432,
+      "suction_temperature_k": 291.4833333333333,
+      "speed_rpm": 3497.7646302250805,
+      "status": "in_training_hull",
+      "nearest_distance": 0.1132075471698113,
+      "warning": "Convex hull coverage does not establish model validity or a safe operating envelope",
+      "mass_flow_kg_s": 0.05473003981711982,
+      "power_w": 3254.9486886964064,
+      "eta_v": 0.9668362359597871,
+      "eta_is": 0.6425302859807405,
+      "mass_flow_kg_s_lower": 0.05404684816928071,
+      "mass_flow_kg_s_upper": 0.055413231464958926,
+      "power_w_lower": 3070.612796413368,
+      "power_w_upper": 3439.284580979445,
+      "group_id": "A1-Td120-Te15",
+      "mass_flow_kg_s_observed": 0.05475867888944445,
+      "power_w_observed": 3229.0
+    },
+    {
+      "point_id": "A1-Td100-Te15",
+      "suction_pressure_pa": 434369.709469584,
+      "discharge_pressure_pa": 1716794.565998832,
+      "suction_temperature_k": 291.4833333333333,
+      "speed_rpm": 3497.7646302250805,
+      "status": "in_training_hull",
+      "nearest_distance": 0.1132075471698113,
+      "warning": "Convex hull coverage does not establish model validity or a safe operating envelope",
+      "mass_flow_kg_s": 0.05556300278151518,
+      "power_w": 2677.585822200548,
+      "eta_v": 0.9815509845673334,
+      "eta_is": 0.6656068315668897,
+      "mass_flow_kg_s_lower": 0.05486941330933434,
+      "mass_flow_kg_s_upper": 0.05625659225369602,
+      "power_w_lower": 2525.9474343470592,
+      "power_w_upper": 2829.224210054037,
+      "group_id": "A1-Td100-Te15",
+      "mass_flow_kg_s_observed": 0.05596825854277778,
+      "power_w_observed": 2665.0
+    },
+    {
+      "point_id": "A1-Td90-Te-10",
+      "suction_pressure_pa": 262000.777140384,
+      "discharge_pressure_pa": 1496162.3326174559,
+      "suction_temperature_k": 291.4833333333333,
+      "speed_rpm": 3497.7646302250805,
+      "status": "in_training_hull",
+      "nearest_distance": 0.0754716981132075,
+      "warning": "Convex hull coverage does not establish model validity or a safe operating envelope",
+      "mass_flow_kg_s": 0.031643721212471124,
+      "power_w": 2179.0296417489376,
+      "eta_v": 0.9608284274357466,
+      "eta_is": 0.6286060078472727,
+      "mass_flow_kg_s_lower": 0.031248714629045486,
+      "mass_flow_kg_s_upper": 0.03203872779589676,
+      "power_w_lower": 2055.6257384192513,
+      "power_w_upper": 2302.433545078624,
+      "group_id": "A1-Td90-Te-10",
+      "mass_flow_kg_s_observed": 0.0318648639925,
+      "power_w_observed": 2242.0
+    },
+    {
+      "point_id": "A1-Td90-Te0",
+      "suction_pressure_pa": 324053.592778896,
+      "discharge_pressure_pa": 1496162.3326174559,
+      "suction_temperature_k": 291.4833333333333,
+      "speed_rpm": 3497.7646302250805,
+      "status": "in_training_hull",
+      "nearest_distance": 0.09433962264150944,
+      "warning": "Convex hull coverage does not establish model validity or a safe operating envelope",
+      "mass_flow_kg_s": 0.0401343837502621,
+      "power_w": 2276.638704092993,
+      "eta_v": 0.9729323112690863,
+      "eta_is": 0.6539562728373208,
+      "mass_flow_kg_s_lower": 0.0396333887599246,
+      "mass_flow_kg_s_upper": 0.040635378740599595,
+      "power_w_lower": 2147.7069552201233,
+      "power_w_upper": 2405.570452965863,
+      "group_id": "A1-Td90-Te0",
+      "mass_flow_kg_s_observed": 0.04023112326138889,
+      "power_w_observed": 2318.0
+    },
+    {
+      "point_id": "A1-Td90-Te20",
+      "suction_pressure_pa": 475738.253228592,
+      "discharge_pressure_pa": 1496162.3326174559,
+      "suction_temperature_k": 291.4833333333333,
+      "speed_rpm": 3497.7646302250805,
+      "status": "in_training_hull",
+      "nearest_distance": 0.11320754716981135,
+      "warning": "Convex hull coverage does not establish model validity or a safe operating envelope",
+      "mass_flow_kg_s": 0.062186935707789194,
+      "power_w": 2435.0056375175536,
+      "eta_v": 0.9938660541235735,
+      "eta_is": 0.6732279967151784,
+      "mass_flow_kg_s_lower": 0.06141066009713306,
+      "mass_flow_kg_s_upper": 0.06296321131844533,
+      "power_w_lower": 2297.1051727683553,
+      "power_w_upper": 2572.906102266752,
+      "group_id": "A1-Td90-Te20",
+      "mass_flow_kg_s_observed": 0.06279734366888888,
+      "power_w_observed": 2431.0
+    },
+    {
+      "point_id": "A1-Td80-Te-5",
+      "suction_pressure_pa": 289579.806313056,
+      "discharge_pressure_pa": 1296214.371115584,
+      "suction_temperature_k": 291.4833333333333,
+      "speed_rpm": 3497.7646302250805,
+      "status": "in_training_hull",
+      "nearest_distance": 0.09433962264150944,
+      "warning": "Convex hull coverage does not establish model validity or a safe operating envelope",
+      "mass_flow_kg_s": 0.03567601097813564,
+      "power_w": 1995.9966445433831,
+      "eta_v": 0.9746656702122805,
+      "eta_is": 0.6567192251741817,
+      "mass_flow_kg_s_lower": 0.03523066957495153,
+      "mass_flow_kg_s_upper": 0.036121352381319756,
+      "power_w_lower": 1882.958358027963,
+      "power_w_upper": 2109.034931058803,
+      "group_id": "A1-Td80-Te-5",
+      "mass_flow_kg_s_observed": 0.03604799362694445,
+      "power_w_observed": 2077.0
+    },
+    {
+      "point_id": "A1-Td80-Te10",
+      "suction_pressure_pa": 393001.165710576,
+      "discharge_pressure_pa": 1296214.371115584,
+      "suction_temperature_k": 291.4833333333333,
+      "speed_rpm": 3497.7646302250805,
+      "status": "in_training_hull",
+      "nearest_distance": 0.09433962264150941,
+      "warning": "Convex hull coverage does not establish model validity or a safe operating envelope",
+      "mass_flow_kg_s": 0.05031896924236919,
+      "power_w": 2109.2346437044457,
+      "eta_v": 0.9913359740668153,
+      "eta_is": 0.6725369696160386,
+      "mass_flow_kg_s_lower": 0.04969084071132606,
+      "mass_flow_kg_s_upper": 0.050947097773412324,
+      "power_w_lower": 1989.7834058303176,
+      "power_w_upper": 2228.685881578574,
+      "group_id": "A1-Td80-Te10",
+      "mass_flow_kg_s_observed": 0.05073934649972223,
+      "power_w_observed": 2157.0
+    },
+    {
+      "point_id": "A1-Td70-Te0",
+      "suction_pressure_pa": 324053.592778896,
+      "discharge_pressure_pa": 1116950.681493216,
+      "suction_temperature_k": 291.4833333333333,
+      "speed_rpm": 3497.7646302250805,
+      "status": "in_training_hull",
+      "nearest_distance": 0.09433962264150947,
+      "warning": "Convex hull coverage does not establish model validity or a safe operating envelope",
+      "mass_flow_kg_s": 0.04079627270819184,
+      "power_w": 1814.9184692436143,
+      "eta_v": 0.9889777340080829,
+      "eta_is": 0.6714817068897563,
+      "mass_flow_kg_s_lower": 0.04028701539958515,
+      "mass_flow_kg_s_upper": 0.04130553001679853,
+      "power_w_lower": 1712.1350930844724,
+      "power_w_upper": 1917.7018454027561,
+      "group_id": "A1-Td70-Te0",
+      "mass_flow_kg_s_observed": 0.04076031435972223,
+      "power_w_observed": 1910.0
+    }
+  ],
+  "limitations": [
+    "Four-parameter efficiency correlation; not geometry inversion",
+    "Efficiency follows metadata power_boundary; no shaft/electrical power conversion",
+    "Speed enters throughput only; no separately validated speed-loss terms",
+    "Training convex hull is a coverage check, not a safe operating envelope",
+    "No real-machine accuracy or saved bench-time claim without matching independent data",
+    "Single grouped split; not repeated active-learning evaluation",
+    "AHRI-style baseline status: available; no measured-time benefit evaluated",
+    "Final test observations never used for calibration or recommendation",
+    "Speed is nominal-equivalent from published rated displacement rate, not per-point shaft measurement; no cross-speed or absolute volumetric-efficiency validation",
+    "Published header pressures rounded to whole psia; used as-is, not silently replaced with simulated pressures",
+    "Source used REFPROP9.0, current model CoolProp8.0.0; property/pressure-rounding differences remain",
+    "Only R404A TableA1 fixed65F slice; no pooling of alternate fluids, other superheat regimes or manufacturer-map points",
+    "Source capacities normalized to zero subcooling; retained for extraction audit only, not used as independent supervision or claimed predicted cooling capacity",
+    "Original hermetic compressor contains POE oil; oil circulation/correction not reported; no oil-mixture model or oil-free claim",
+    "Input hull vertices intentionally observed; evaluation tests interior interpolation, not boundary or cross-speed generalization",
+    "Single public report/single machine; held-out conditions share laboratory/instrument calibration and do not prove cross-brand transfer"
+  ]
+}

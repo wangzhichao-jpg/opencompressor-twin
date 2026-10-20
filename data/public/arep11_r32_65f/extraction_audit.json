@@ -1,0 +1,394 @@
+{
+  "raw_sha256": "7da8c43e3c3f8ba3905a016f56a6205db2049ed7c5e7403db70fbe4ddbafc291",
+  "rows": [
+    {
+      "point_id": "A6-Td140-Te45",
+      "mass_flow_lb_h": 199.6,
+      "power_w": 2547,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td140-Te50",
+      "mass_flow_lb_h": 225.8,
+      "power_w": 2529,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td140-Te55",
+      "mass_flow_lb_h": 254.7,
+      "power_w": 2517,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td130-Te40",
+      "mass_flow_lb_h": 182.7,
+      "power_w": 2242,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td130-Te45",
+      "mass_flow_lb_h": 206.7,
+      "power_w": 2222,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td130-Te50",
+      "mass_flow_lb_h": 233.0,
+      "power_w": 2203,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td130-Te55",
+      "mass_flow_lb_h": 262.6,
+      "power_w": 2185,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td120-Te30",
+      "mass_flow_lb_h": 149.8,
+      "power_w": 1972,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td120-Te35",
+      "mass_flow_lb_h": 168.8,
+      "power_w": 1960,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td120-Te40",
+      "mass_flow_lb_h": 190.3,
+      "power_w": 1946,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td120-Te45",
+      "mass_flow_lb_h": 213.8,
+      "power_w": 1935,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td120-Te50",
+      "mass_flow_lb_h": 239.7,
+      "power_w": 1923,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td120-Te55",
+      "mass_flow_lb_h": 268.4,
+      "power_w": 1904,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td110-Te20",
+      "mass_flow_lb_h": 120.2,
+      "power_w": 1744,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td110-Te25",
+      "mass_flow_lb_h": 136.8,
+      "power_w": 1736,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td110-Te30",
+      "mass_flow_lb_h": 153.5,
+      "power_w": 1732,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td110-Te35",
+      "mass_flow_lb_h": 172.9,
+      "power_w": 1722,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td110-Te40",
+      "mass_flow_lb_h": 194.5,
+      "power_w": 1712,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td110-Te45",
+      "mass_flow_lb_h": 218.2,
+      "power_w": 1700,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td110-Te50",
+      "mass_flow_lb_h": 244.2,
+      "power_w": 1682,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td110-Te55",
+      "mass_flow_lb_h": 273.1,
+      "power_w": 1660,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td100-Te15",
+      "mass_flow_lb_h": 109.0,
+      "power_w": 1534,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td100-Te20",
+      "mass_flow_lb_h": 123.9,
+      "power_w": 1529,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td100-Te25",
+      "mass_flow_lb_h": 140.9,
+      "power_w": 1521,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td100-Te30",
+      "mass_flow_lb_h": 158.7,
+      "power_w": 1513,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td100-Te35",
+      "mass_flow_lb_h": 178.2,
+      "power_w": 1503,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td100-Te40",
+      "mass_flow_lb_h": 199.3,
+      "power_w": 1492,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td100-Te45",
+      "mass_flow_lb_h": 222.7,
+      "power_w": 1477,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td100-Te50",
+      "mass_flow_lb_h": 248.8,
+      "power_w": 1460,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td100-Te55",
+      "mass_flow_lb_h": 278.0,
+      "power_w": 1445,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td90-Te10",
+      "mass_flow_lb_h": 98.1,
+      "power_w": 1355,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td90-Te15",
+      "mass_flow_lb_h": 111.0,
+      "power_w": 1351,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td90-Te20",
+      "mass_flow_lb_h": 126.5,
+      "power_w": 1344,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td90-Te25",
+      "mass_flow_lb_h": 143.1,
+      "power_w": 1337,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td90-Te30",
+      "mass_flow_lb_h": 161.0,
+      "power_w": 1331,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td90-Te35",
+      "mass_flow_lb_h": 180.3,
+      "power_w": 1321,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td90-Te40",
+      "mass_flow_lb_h": 201.6,
+      "power_w": 1306,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td90-Te45",
+      "mass_flow_lb_h": 225.5,
+      "power_w": 1290,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td90-Te50",
+      "mass_flow_lb_h": 252.0,
+      "power_w": 1274,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td90-Te55",
+      "mass_flow_lb_h": 281.1,
+      "power_w": 1256,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td80-Te10",
+      "mass_flow_lb_h": 102.1,
+      "power_w": 1191,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td80-Te15",
+      "mass_flow_lb_h": 115.9,
+      "power_w": 1187,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td80-Te20",
+      "mass_flow_lb_h": 130.7,
+      "power_w": 1182,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td80-Te25",
+      "mass_flow_lb_h": 146.8,
+      "power_w": 1174,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td80-Te30",
+      "mass_flow_lb_h": 164.3,
+      "power_w": 1162,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td80-Te35",
+      "mass_flow_lb_h": 184.0,
+      "power_w": 1148,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td80-Te40",
+      "mass_flow_lb_h": 205.4,
+      "power_w": 1135,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td80-Te45",
+      "mass_flow_lb_h": 229.1,
+      "power_w": 1118,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td80-Te50",
+      "mass_flow_lb_h": 255.6,
+      "power_w": 1105,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td70-Te10",
+      "mass_flow_lb_h": 104.3,
+      "power_w": 1052,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td70-Te15",
+      "mass_flow_lb_h": 117.3,
+      "power_w": 1047,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td70-Te20",
+      "mass_flow_lb_h": 132.3,
+      "power_w": 1039,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td70-Te25",
+      "mass_flow_lb_h": 148.1,
+      "power_w": 1029,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td70-Te30",
+      "mass_flow_lb_h": 166.3,
+      "power_w": 1020,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    },
+    {
+      "point_id": "A6-Td70-Te35",
+      "mass_flow_lb_h": 185.6,
+      "power_w": 1005,
+      "cpe_rounding_check": "passed",
+      "single_phase_gas_check": "passed"
+    }
+  ],
+  "count": 55,
+  "nominal_rpm": 3499.8967741935485,
+  "blank_cells": "excluded, not filled",
+  "visual_check": "Rendered pages 15 and 18 compared block-by-block with native text-layer transcription"
+}

@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+.cache/
+.tmp/
+build/
+dist/
+runs/
+# Original reports are not redistributed; place downloaded copies locally only
+资料库/
+*.pdf
+.env
+.env.*
