@@ -2,7 +2,7 @@
 
 Versions follow PEP 440.
 
-## 0.1.0a1 — unreleased research preview
+## 0.1.0a1 — 2026-10-20 (research preview)
 
 ### Validation
 - Fresh frozen external test on Copeland ZP21K5E-PFV (AREP #11), R410A and R32 at 65°F suction temperature; protocol and code hashes fixed before the data were downloaded. The four-parameter model meets a 5% MARE / 10% P95 target but is clearly worse than the AHRI-style ten-coefficient baseline; the RBF residual extension improves the base model on both responses and is roughly on par with the baseline. See `docs/validation.md`.

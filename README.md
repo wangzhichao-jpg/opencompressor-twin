@@ -10,6 +10,8 @@
 
 Repositories: [GitHub](https://github.com/wangzhichao-jpg/opencompressor-twin) · [Gitee mirror](https://gitee.com/bigtaurus/opencompressor-twin)
 
+![Rolling-piston and scroll compressors, quarter-section models](docs/assets/showcase.png)
+
 > **Status: research preview (0.1.0a1).** The scroll workflow has been tested on published calorimeter data from two compressor models. The rolling-piston model is implemented and software-tested, but **has not yet been validated against measured rolling-piston data**. Read the [validation report](docs/validation.md) before relying on any number.
 
 ## What it does

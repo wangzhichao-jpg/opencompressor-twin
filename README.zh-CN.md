@@ -10,6 +10,8 @@
 
 仓库：[GitHub](https://github.com/wangzhichao-jpg/opencompressor-twin) · [Gitee 镜像](https://gitee.com/bigtaurus/opencompressor-twin)
 
+![滚动转子式与涡旋式压缩机四分之一剖视模型](docs/assets/showcase.png)
+
 > **当前状态：研究预览（0.1.0a1）。** 涡旋流程已在两款压缩机的公开量热计实测数据上检验；滚动转子模型已实现并通过软件测试，**但尚未经过滚动转子实测数据验证**。使用任何数字前请先阅读[验证报告](docs/validation.zh-CN.md)。
 
 ## 能做什么
