@@ -5,6 +5,8 @@
 [![CI](https://github.com/wangzhichao-jpg/opencompressor-twin/actions/workflows/ci.yml/badge.svg)](https://github.com/wangzhichao-jpg/opencompressor-twin/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python: 3.11–3.14](https://img.shields.io/badge/Python-3.11–3.14-brightgreen.svg)](pyproject.toml)
+[![Video: Bilibili](https://img.shields.io/badge/Video-Bilibili-00A1D6.svg)](https://www.bilibili.com/video/BV12Xnw6TEY2/)
+[![Video: YouTube](https://img.shields.io/badge/Video-YouTube-FF0000.svg)](https://youtu.be/I0JtG5D9YBg)
 
 **One open, reproducible toolkit for positive-displacement refrigerant compressors: calibrate a performance model from measured points, predict untested conditions with an explicit validity domain, compare honestly against industry baselines, and choose the next test point.**
 
