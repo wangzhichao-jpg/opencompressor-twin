@@ -20,6 +20,6 @@
 ## 3. 发布与同步
 
 - [ ] `main` 分支打标签 `vX.Y.Z`
-- [ ] 同步推送 GitHub（wangzhichao-jpg/opencompressor-twin）与 Gitee（bigtaurus/opencompressor-twin）
+- [x] 同步推送 GitHub（wangzhichao-jpg/opencompressor-twin）与 Gitee（bigtaurus/opencompressor-twin）
 - [ ] 两边 Release 上传相同附件；匿名下载并核对哈希
 - [ ] 从公开镜像下载 wheel 独立安装冒烟测试

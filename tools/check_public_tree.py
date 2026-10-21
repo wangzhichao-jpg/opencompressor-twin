@@ -28,7 +28,7 @@ FORBIDDEN_PREFIXES = (
 )
 FORBIDDEN_SUFFIXES = (".pdf", ".docx", ".doc", ".xlsx", ".png", ".jpg", ".jpeg", ".zip", ".whl", ".mp4", ".mp3", ".m4a")
 # Reviewed documentation images (project-generated illustrations only) may be published here.
-ALLOWED_IMAGE_PREFIX = "docs/assets/"
+ALLOWED_IMAGE_PREFIXES = ("docs/assets/", "publication/docs/assets/")
 ALLOWED_IMAGE_SUFFIXES = (".png", ".jpg", ".jpeg")
 TEXT_SUFFIXES = {".py", ".md", ".json", ".toml", ".txt", ".csv", ".yml", ".yaml", ".cfg", ".ini", ".cff", ""}
 MAX_BYTES = 5 * 1024 * 1024
@@ -71,7 +71,7 @@ def check(root=ROOT, rules_path=None, strict=False, self_exempt=True):
         path = root / rel
         if rel.startswith(prefixes):
             errors.append(f"{rel}: forbidden location")
-        allowed_image = rel.startswith(ALLOWED_IMAGE_PREFIX) and rel.lower().endswith(ALLOWED_IMAGE_SUFFIXES)
+        allowed_image = rel.startswith(ALLOWED_IMAGE_PREFIXES) and rel.lower().endswith(ALLOWED_IMAGE_SUFFIXES)
         if rel.lower().endswith(FORBIDDEN_SUFFIXES) and not allowed_image:
             errors.append(f"{rel}: binary/original artefact not for publication")
         if path.is_file() and path.stat().st_size > MAX_BYTES:
