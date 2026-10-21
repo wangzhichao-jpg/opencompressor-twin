@@ -6,7 +6,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python: 3.11–3.14](https://img.shields.io/badge/Python-3.11–3.14-brightgreen.svg)](pyproject.toml)
 [![视频: B站](https://img.shields.io/badge/Video-Bilibili-00A1D6.svg)](https://www.bilibili.com/video/BV12Xnw6TEY2/)
-[![视频: YouTube](https://img.shields.io/badge/Video-YouTube-FF0000.svg)](https://youtu.be/I0JtG5D9YBg)
+[![视频: YouTube](https://img.shields.io/badge/Video-YouTube-FF0000.svg)](https://youtu.be/IrX2Fq-NGEU)
 
 **统一、可复现的容积式制冷压缩机性能建模工具：用实测点标定模型，预测未测工况并给出适用域，与行业基线诚实对比，并推荐下一个测点。**
 
