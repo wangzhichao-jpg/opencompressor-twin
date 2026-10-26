@@ -96,6 +96,11 @@ octwin recommend --model model.json --candidates candidates.csv --strategy kerne
 
 最有价值的贡献是带同工况流量与压缩机功率的滚动转子（及涡旋）实测数据。请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)；只要来源、单位、功率边界和许可清楚，任何品牌的数据都欢迎。
 
+## 作者与引用
+
+项目负责人：[王智超](https://github.com/wangzhichao-jpg)（ORCID [0000-0001-6662-835X](https://orcid.org/0000-0001-6662-835X)）。
+在论文或工程报告中使用本软件，请按 [CITATION.cff](CITATION.cff) 引用（GitHub 页面右侧 **Cite this repository** 可直接导出 BibTeX/APA）。如果对你有帮助，欢迎在 GitHub 或 [Gitee](https://gitee.com/bigtaurus/opencompressor-twin) 点 Star，方便更多同行找到它。问题反馈与公开数据合作请提 [Issue](https://github.com/wangzhichao-jpg/opencompressor-twin/issues)。
+
 ## 许可证
 
 原创代码采用 [MIT](LICENSE) 许可，© 2026 建科环能科技有限公司。依赖许可见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)；数据集保留各自条款与署名，见 [DATA_LICENSES.md](DATA_LICENSES.md)。

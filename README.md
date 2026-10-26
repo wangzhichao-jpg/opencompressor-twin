@@ -113,6 +113,11 @@ Metadata JSON declares `compressor_type` (`rolling_piston` | `scroll`), refriger
 
 Measured rolling-piston (and scroll) data with paired mass flow and compressor power are the most valuable contribution. Please read [CONTRIBUTING.md](CONTRIBUTING.md); data from any manufacturer is welcome when the source, units, power boundary and licence are clear.
 
+## Author and citation
+
+Project lead: [Zhichao Wang](https://github.com/wangzhichao-jpg) (ORCID [0000-0001-6662-835X](https://orcid.org/0000-0001-6662-835X)).
+If you use this software in a paper or an engineering report, please cite it as described in [CITATION.cff](CITATION.cff) (the **Cite this repository** button on GitHub exports BibTeX/APA). If it is useful to you, a star on GitHub or [Gitee](https://gitee.com/bigtaurus/opencompressor-twin) helps other engineers find it. Questions, bug reports and public data: [Issues](https://github.com/wangzhichao-jpg/opencompressor-twin/issues).
+
 ## License
 
 Original code: [MIT](LICENSE), © 2026 Jianke Huanneng Technology Co., Ltd. Dependencies: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Datasets keep their own terms and attribution: [DATA_LICENSES.md](DATA_LICENSES.md).
