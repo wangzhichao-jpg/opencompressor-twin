@@ -6,7 +6,7 @@ authors:
 - family-names: Wang
   given-names: Zhichao
   orcid: https://orcid.org/0000-0001-6662-835X
-- name: Jianke Huanneng Technology Co., Ltd.
+- name: Jianke Environment and Energy Technology Co., Ltd.
 version: 0.1.0a1
 license: MIT
 repository-code: https://github.com/wangzhichao-jpg/opencompressor-twin

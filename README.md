@@ -120,4 +120,4 @@ If you use this software in a paper or an engineering report, please cite it as 
 
 ## License
 
-Original code: [MIT](LICENSE), © 2026 Jianke Huanneng Technology Co., Ltd. Dependencies: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Datasets keep their own terms and attribution: [DATA_LICENSES.md](DATA_LICENSES.md).
+Original code: [MIT](LICENSE), © 2026 Jianke Environment and Energy Technology Co., Ltd. Dependencies: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Datasets keep their own terms and attribution: [DATA_LICENSES.md](DATA_LICENSES.md).
