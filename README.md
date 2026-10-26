@@ -118,6 +118,8 @@ Measured rolling-piston (and scroll) data with paired mass flow and compressor p
 Project lead: [Zhichao Wang](https://github.com/wangzhichao-jpg) (ORCID [0000-0001-6662-835X](https://orcid.org/0000-0001-6662-835X)).
 If you use this software in a paper or an engineering report, please cite it as described in [CITATION.cff](CITATION.cff) (the **Cite this repository** button on GitHub exports BibTeX/APA). If it is useful to you, a star on GitHub or [Gitee](https://gitee.com/bigtaurus/opencompressor-twin) helps other engineers find it. Questions, bug reports and public data: [Issues](https://github.com/wangzhichao-jpg/opencompressor-twin/issues).
 
+Cooperation and enquiries: [wangzhichao@chinaibee.com](mailto:wangzhichao@chinaibee.com)
+
 ## License
 
 Original code: [MIT](LICENSE), © 2026 Jianke Environment and Energy Technology Co., Ltd. Dependencies: [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Datasets keep their own terms and attribution: [DATA_LICENSES.md](DATA_LICENSES.md).
